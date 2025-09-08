@@ -825,3 +825,92 @@ const struct Tileset gTileset_UnionRoom =
     .metatileAttributes = gMetatileAttributes_UnionRoom,
     .callback = NULL,
 };
+
+
+const struct Tileset gTileset_GeneralRS =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_GeneralRS,
+    .palettes = gTilesetPalettes_GeneralRS,
+    .metatiles = gMetatiles_GeneralRS,
+    .metatileAttributes = gMetatileAttributes_GeneralRS,
+    .callback = InitTilesetAnim_GeneralRS,
+};
+
+const struct Tileset gTileset_RustboroRS =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_RustboroRS,
+    .palettes = gTilesetPalettes_RustboroRS,
+    .metatiles = gMetatiles_RustboroRS,
+    .metatileAttributes = gMetatileAttributes_RustboroRS,
+    .callback = InitTilesetAnim_RustboroRS,
+};
+
+const struct Tileset gTileset_FallarborRS =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_FallarborRS,
+    .palettes = gTilesetPalettes_FallarborRS,
+    .metatiles = gMetatiles_FallarborRS,
+    .metatileAttributes = gMetatileAttributes_FallarborRS,
+    .callback = InitTilesetAnim_Fallarbor,
+};
+
+const struct Tileset gTileset_RusturfTunnelRS =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_RusturfTunnelRS,
+    .palettes = gTilesetPalettes_RusturfTunnelRS,
+    .metatiles = gMetatiles_RusturfTunnelRS,
+    .metatileAttributes = gMetatileAttributes_RusturfTunnelRS,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_MeteorFallsRS =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_MeteorFallsRS,
+    .palettes = gTilesetPalettes_MeteorFallsRS,
+    .metatiles = gMetatiles_MeteorFallsRS,
+    .metatileAttributes = gMetatileAttributes_MeteorFallsRS,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_CaveRS =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_CaveRS,
+    .palettes = gTilesetPalettes_CaveRS,
+    .metatiles = gMetatiles_CaveRS,
+    .metatileAttributes = gMetatileAttributes_CaveRS,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Kanto1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Kanto1,
+    .palettes = gTilesetPalettes_Kanto1,
+    .metatiles = gMetatiles_Kanto1,
+    .metatileAttributes = gMetatileAttributes_Kanto1,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Johto1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Johto1,
+    .palettes = gTilesetPalettes_Johto1,
+    .metatiles = gMetatiles_Johto1,
+    .metatileAttributes = gMetatileAttributes_Johto1,
+    .callback = NULL,
+};

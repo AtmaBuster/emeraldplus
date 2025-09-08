@@ -4410,6 +4410,616 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE104_FESTA",
+      "name": "Route104_Festa_Layout",
+      "width": 40,
+      "height": 44,
+      "primary_tileset": "gTileset_GeneralRS",
+      "secondary_tileset": "gTileset_RustboroRS",
+      "border_filepath": "data/layouts/Route104_Festa/border.bin",
+      "blockdata_filepath": "data/layouts/Route104_Festa/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE116_PROTO",
+      "name": "Route116_Proto_Layout",
+      "width": 100,
+      "height": 20,
+      "primary_tileset": "gTileset_GeneralRS",
+      "secondary_tileset": "gTileset_RustboroRS",
+      "border_filepath": "data/layouts/Route116_Proto/border.bin",
+      "blockdata_filepath": "data/layouts/Route116_Proto/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUSTBORO_CITY_PROTO",
+      "name": "RustboroCity_Proto_Layout",
+      "width": 40,
+      "height": 60,
+      "primary_tileset": "gTileset_GeneralRS",
+      "secondary_tileset": "gTileset_RustboroRS",
+      "border_filepath": "data/layouts/RustboroCity_Proto/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_Proto/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUSTURF_TUNNEL_PROTO",
+      "name": "RusturfTunnel_Proto_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_GeneralRS",
+      "secondary_tileset": "gTileset_RusturfTunnelRS",
+      "border_filepath": "data/layouts/RusturfTunnel_Proto/border.bin",
+      "blockdata_filepath": "data/layouts/RusturfTunnel_Proto/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE115_PROTO",
+      "name": "Route115_Proto_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_GeneralRS",
+      "secondary_tileset": "gTileset_FallarborRS",
+      "border_filepath": "data/layouts/Route115_Proto/border.bin",
+      "blockdata_filepath": "data/layouts/Route115_Proto/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_FALLS_PROTO",
+      "name": "MeteorFalls_Proto_Layout",
+      "width": 20,
+      "height": 30,
+      "primary_tileset": "gTileset_GeneralRS",
+      "secondary_tileset": "gTileset_MeteorFallsRS",
+      "border_filepath": "data/layouts/MeteorFalls_Proto/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorFalls_Proto/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_FALLS_B1F_PROTO",
+      "name": "MeteorFallsB1F_Proto_Layout",
+      "width": 20,
+      "height": 30,
+      "primary_tileset": "gTileset_GeneralRS",
+      "secondary_tileset": "gTileset_CaveRS",
+      "border_filepath": "data/layouts/MeteorFallsB1F_Proto/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorFallsB1F_Proto/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETALBURG_WOODS_PROTO",
+      "name": "PetalburgWoods_Proto_Layout",
+      "width": 54,
+      "height": 44,
+      "primary_tileset": "gTileset_GeneralRS",
+      "secondary_tileset": "gTileset_RustboroRS",
+      "border_filepath": "data/layouts/PetalburgWoods_Proto/border.bin",
+      "blockdata_filepath": "data/layouts/PetalburgWoods_Proto/map.bin"
+    },
+    {
+      "id": "LAYOUT_VERMILION_CITY",
+      "name": "VermilionCity_Layout",
+      "width": 48,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/VermilionCity/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE6",
+      "name": "Route6_Layout",
+      "width": 24,
+      "height": 38,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/Route6/border.bin",
+      "blockdata_filepath": "data/layouts/Route6/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE11",
+      "name": "Route11_Layout",
+      "width": 75,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/Route11/border.bin",
+      "blockdata_filepath": "data/layouts/Route11/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE2",
+      "name": "Route2_Layout",
+      "width": 24,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/Route2/border.bin",
+      "blockdata_filepath": "data/layouts/Route2/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIGLETTS_CAVE_ENTRANCE",
+      "name": "DiglettsCaveEntrance_Layout",
+      "width": 10,
+      "height": 21,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DiglettsCaveEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/DiglettsCaveEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_PEWTER_CITY",
+      "name": "PewterCity_Layout",
+      "width": 48,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/PewterCity/border.bin",
+      "blockdata_filepath": "data/layouts/PewterCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE3",
+      "name": "Route3_Layout",
+      "width": 84,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/Route3/border.bin",
+      "blockdata_filepath": "data/layouts/Route3/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE4",
+      "name": "Route4_Layout",
+      "width": 108,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/Route4/border.bin",
+      "blockdata_filepath": "data/layouts/Route4/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIGLETTS_CAVE",
+      "name": "DiglettsCave_Layout",
+      "width": 85,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DiglettsCave/border.bin",
+      "blockdata_filepath": "data/layouts/DiglettsCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_CITY",
+      "name": "ViridianCity_Layout",
+      "width": 48,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/ViridianCity/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_CINNABAR_ISLAND",
+      "name": "CinnabarIsland_Layout",
+      "width": 37,
+      "height": 21,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/CinnabarIsland/border.bin",
+      "blockdata_filepath": "data/layouts/CinnabarIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALLET_TOWN",
+      "name": "PalletTown_Layout",
+      "width": 24,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/PalletTown/border.bin",
+      "blockdata_filepath": "data/layouts/PalletTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE21",
+      "name": "Route21_Layout",
+      "width": 28,
+      "height": 100,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/Route21/border.bin",
+      "blockdata_filepath": "data/layouts/Route21/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE22",
+      "name": "Route22_Layout",
+      "width": 48,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/Route22/border.bin",
+      "blockdata_filepath": "data/layouts/Route22/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE1",
+      "name": "Route1_Layout",
+      "width": 24,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/Route1/border.bin",
+      "blockdata_filepath": "data/layouts/Route1/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFFRON_CITY",
+      "name": "SaffronCity_Layout",
+      "width": 66,
+      "height": 46,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/SaffronCity/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_BARK_TOWN",
+      "name": "NewBarkTown_Layout",
+      "width": 24,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/NewBarkTown/border.bin",
+      "blockdata_filepath": "data/layouts/NewBarkTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_GOLDENROD_CITY",
+      "name": "GoldenrodCity_Layout",
+      "width": 48,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/GoldenrodCity/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZALEA_TOWN",
+      "name": "AzaleaTown_Layout",
+      "width": 48,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/AzaleaTown/border.bin",
+      "blockdata_filepath": "data/layouts/AzaleaTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIOLET_CITY",
+      "name": "VioletCity_Layout",
+      "width": 48,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/VioletCity/border.bin",
+      "blockdata_filepath": "data/layouts/VioletCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ECRUTEAK_CITY",
+      "name": "EcruteakCity_Layout",
+      "width": 66,
+      "height": 48,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/EcruteakCity/border.bin",
+      "blockdata_filepath": "data/layouts/EcruteakCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHERRYGROVE_CITY",
+      "name": "CherrygroveCity_Layout",
+      "width": 48,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/CherrygroveCity/border.bin",
+      "blockdata_filepath": "data/layouts/CherrygroveCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_BLACKTHORN_CITY",
+      "name": "BlackthornCity_Layout",
+      "width": 48,
+      "height": 44,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/BlackthornCity/border.bin",
+      "blockdata_filepath": "data/layouts/BlackthornCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE26",
+      "name": "Route26_Layout",
+      "width": 30,
+      "height": 124,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/Route26/border.bin",
+      "blockdata_filepath": "data/layouts/Route26/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE37",
+      "name": "Route37_Layout",
+      "width": 24,
+      "height": 28,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/Route37/border.bin",
+      "blockdata_filepath": "data/layouts/Route37/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE29",
+      "name": "Route29_Layout",
+      "width": 72,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/Route29/border.bin",
+      "blockdata_filepath": "data/layouts/Route29/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE45",
+      "name": "Route45_Layout",
+      "width": 24,
+      "height": 100,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/Route45/border.bin",
+      "blockdata_filepath": "data/layouts/Route45/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE46",
+      "name": "Route46_Layout",
+      "width": 24,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/Route46/border.bin",
+      "blockdata_filepath": "data/layouts/Route46/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE33",
+      "name": "Route33_Layout",
+      "width": 44,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/Route33/border.bin",
+      "blockdata_filepath": "data/layouts/Route33/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE27",
+      "name": "Route27_Layout",
+      "width": 96,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/Route27/border.bin",
+      "blockdata_filepath": "data/layouts/Route27/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE36",
+      "name": "Route36_Layout",
+      "width": 56,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/Route36/border.bin",
+      "blockdata_filepath": "data/layouts/Route36/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE31",
+      "name": "Route31_Layout",
+      "width": 48,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/Route31/border.bin",
+      "blockdata_filepath": "data/layouts/Route31/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE32",
+      "name": "Route32_Layout",
+      "width": 26,
+      "height": 100,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/Route32/border.bin",
+      "blockdata_filepath": "data/layouts/Route32/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE35",
+      "name": "Route35_Layout",
+      "width": 24,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/Route35/border.bin",
+      "blockdata_filepath": "data/layouts/Route35/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE34",
+      "name": "Route34_Layout",
+      "width": 28,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/Route34/border.bin",
+      "blockdata_filepath": "data/layouts/Route34/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE30",
+      "name": "Route30_Layout",
+      "width": 38,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/Route30/border.bin",
+      "blockdata_filepath": "data/layouts/Route30/map.bin"
+    },
+    {
+      "id": "LAYOUT_NATIONAL_PARK",
+      "name": "NationalPark_Layout",
+      "width": 38,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/NationalPark/border.bin",
+      "blockdata_filepath": "data/layouts/NationalPark/map.bin"
+    },
+    {
+      "id": "LAYOUT_TOHJO_FALLS",
+      "name": "TohjoFalls_Layout",
+      "width": 39,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TohjoFalls/border.bin",
+      "blockdata_filepath": "data/layouts/TohjoFalls/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERWATER_ROUTE27",
+      "name": "Underwater_Route27_Layout",
+      "width": 96,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/Underwater_Route27/border.bin",
+      "blockdata_filepath": "data/layouts/Underwater_Route27/map.bin"
+    },
+    {
+      "id": "LAYOUT_DARK_CAVE_VIOLET_ENTRANCE",
+      "name": "DarkCaveVioletEntrance_Layout",
+      "width": 48,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DarkCaveVioletEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/DarkCaveVioletEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_DARK_CAVE_BLACKTHORN_ENTRANCE",
+      "name": "DarkCaveBlackthornEntrance_Layout",
+      "width": 36,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DarkCaveBlackthornEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/DarkCaveBlackthornEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE25",
+      "name": "Route25_Layout",
+      "width": 72,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/Route25/border.bin",
+      "blockdata_filepath": "data/layouts/Route25/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE5",
+      "name": "Route5_Layout",
+      "width": 32,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/Route5/border.bin",
+      "blockdata_filepath": "data/layouts/Route5/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE24",
+      "name": "Route24_Layout",
+      "width": 24,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/Route24/border.bin",
+      "blockdata_filepath": "data/layouts/Route24/map.bin"
+    },
+    {
+      "id": "LAYOUT_CERULEAN_CITY",
+      "name": "CeruleanCity_Layout",
+      "width": 48,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/CeruleanCity/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINS_OF_ALPH",
+      "name": "RuinsOfAlph_Layout",
+      "width": 30,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/RuinsOfAlph/border.bin",
+      "blockdata_filepath": "data/layouts/RuinsOfAlph/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_SILVER_OUTSIDE",
+      "name": "MtSilverOutside_Layout",
+      "width": 36,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/MtSilverOutside/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilverOutside/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE28",
+      "name": "Route28_Layout",
+      "width": 48,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/Route28/border.bin",
+      "blockdata_filepath": "data/layouts/Route28/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINS_OF_ALPH_MAIN_CHAMBER",
+      "name": "RuinsOfAlphMainChamber_Layout",
+      "width": 36,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RuinsOfAlphMainChamber/border.bin",
+      "blockdata_filepath": "data/layouts/RuinsOfAlphMainChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERWATER_ROUTE21",
+      "name": "Underwater_Route21_Layout",
+      "width": 26,
+      "height": 100,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/Underwater_Route21/border.bin",
+      "blockdata_filepath": "data/layouts/Underwater_Route21/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERWATER_ROUTE26",
+      "name": "Underwater_Route26_Layout",
+      "width": 30,
+      "height": 124,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/Underwater_Route26/border.bin",
+      "blockdata_filepath": "data/layouts/Underwater_Route26/map.bin"
+    },
+    {
+      "id": "LAYOUT_OPEN_OCEAN",
+      "name": "OpenOcean_Layout",
+      "width": 88,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kanto1",
+      "border_filepath": "data/layouts/OpenOcean/border.bin",
+      "blockdata_filepath": "data/layouts/OpenOcean/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERWATER_OPEN_OCEAN",
+      "name": "Underwater_OpenOcean_Layout",
+      "width": 88,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/Underwater_OpenOcean/border.bin",
+      "blockdata_filepath": "data/layouts/Underwater_OpenOcean/map.bin"
     }
   ]
 }

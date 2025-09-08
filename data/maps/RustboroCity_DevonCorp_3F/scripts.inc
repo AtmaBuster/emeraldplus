@@ -149,6 +149,9 @@ RustboroCity_DevonCorp_3F_Movement_PlayerApproachDesk:
 RustboroCity_DevonCorp_3F_EventScript_MrStone::
 	lock
 	faceplayer
+	goto_if_unset FLAG_UNUSED_0x901, Devon3F_SkipBonus
+	goto_if_unset FLAG_UNUSED_0x90D, Devon3F_Bonus
+Devon3F_SkipBonus::
 	goto_if_set FLAG_RECEIVED_EXP_SHARE, RustboroCity_DevonCorp_3F_EventScript_MrStoneAfterFavor
 	goto_if_set FLAG_DELIVERED_STEVEN_LETTER, RustboroCity_DevonCorp_3F_EventScript_GiveExpShare
 	msgbox RustboroCity_DevonCorp_3F_Text_CountingOnYou, MSGBOX_DEFAULT
@@ -157,6 +160,36 @@ RustboroCity_DevonCorp_3F_EventScript_MrStone::
 	waitmovement 0
 	release
 	end
+
+Devon3F_Bonus::
+	msgbox Devon3F_Text_GiveStuff, MSGBOX_DEFAULT
+	giveitem ITEM_EON_TICKET
+	giveitem ITEM_MYSTIC_TICKET
+	giveitem ITEM_AURORA_TICKET
+	giveitem ITEM_GS_BALL
+	setflag FLAG_UNUSED_0x90D
+	setflag FLAG_UNUSED_0x90C
+	setflag FLAG_ENABLE_SHIP_SOUTHERN_ISLAND
+	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
+	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
+	msgbox Devon3F_Text_Enjoy, MSGBOX_DEFAULT
+	closemessage
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	release
+	end
+
+Devon3F_Text_GiveStuff::
+	.string "MR. STONE: Ah, {PLAYER}. There you are!\p"
+	.string "I was doing some spring cleaning and\n"
+	.string "found a few things in my desk.\p"
+	.string "I thought you might like to have them.$"
+
+Devon3F_Text_Enjoy::
+	.string "MR. STONE: I can't quite recall where\n"
+	.string "they came from, but I'm sure that\l"
+	.string "they'll be a help on your adventure.\p"
+	.string "Take care, {PLAYER}!$"
 
 RustboroCity_DevonCorp_3F_EventScript_GiveExpShare::
 	msgbox RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter, MSGBOX_DEFAULT

@@ -657,3 +657,8 @@ MagmaHideout_4F_EventScript_ItemMaxRevive::
 MagmaHideout_3F_3R_EventScript_ItemEscapeRope::
 	finditem ITEM_ESCAPE_ROPE
 	end
+
+Route116_Proto_OldSeaMap::
+	setflag FLAG_ENABLE_SHIP_FARAWAY_ISLAND
+	finditem ITEM_OLD_SEA_MAP
+	end

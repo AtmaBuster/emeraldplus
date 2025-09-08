@@ -298,7 +298,7 @@
 #define ITEM_SUPER_ROD 264
 #define ITEM_SS_TICKET 265
 #define ITEM_CONTEST_PASS 266
-#define ITEM_10B 267
+#define ITEM_TANZAKU 267
 #define ITEM_WAILMER_PAIL 268
 #define ITEM_DEVON_GOODS 269
 #define ITEM_SOOT_SACK 270
@@ -382,7 +382,7 @@
 #define ITEM_HM08 346
 
 // Unknown
-#define ITEM_15B 347
+#define ITEM_GS_BALL 347
 #define ITEM_15C 348
 
 // FireRed/LeafGreen

@@ -592,6 +592,11 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
             ScriptContext_SetupScript(MossdeepCity_SpaceCenter_2F_EventScript_RivalRayquazaCall);
             return TRUE;
         }
+	if (ShouldDoMrStoneCall() == TRUE)
+	{
+	    ScriptContext_SetupScript(Mossdeep_MrStoneCall);
+	    return TRUE;
+	}
     }
 
     if (SafariZoneTakeStep() == TRUE)

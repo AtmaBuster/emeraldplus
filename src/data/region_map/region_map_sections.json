@@ -513,10 +513,10 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_METEOR_FALLS2",
-      "name": "METEOR FALLS",
-      "x": 1,
-      "y": 2,
+      "id": "MAPSEC_MT_SILVER_CAVE",
+      "name": "MT. SILVER",
+      "x": 12,
+      "y": 4,
       "width": 1,
       "height": 1
     },
@@ -531,7 +531,6 @@
     {
       "id": "MAPSEC_AQUA_HIDEOUT_OLD",
       "name": "{AQUA} HIDEOUT",
-      "name_clone": true,
       "x": 19,
       "y": 3,
       "width": 1,
@@ -690,24 +689,39 @@
       "name": "SECRET BASE"
     },
     {
-      "id": "MAPSEC_DYNAMIC",
-      "name": ""
+      "id": "MAPSEC_DYNAMIC"
     },
     {
       "id": "MAPSEC_PALLET_TOWN",
-      "name": "PALLET TOWN"
+      "name": "PALLET TOWN",
+      "x": 18,
+      "y": 9,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_VIRIDIAN_CITY",
-      "name": "VIRIDIAN CITY"
+      "name": "VIRIDIAN CITY",
+      "x": 18,
+      "y": 5,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_PEWTER_CITY",
-      "name": "PEWTER CITY"
+      "name": "PEWTER CITY",
+      "x": 18,
+      "y": 2,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_CERULEAN_CITY",
-      "name": "CERULEAN CITY"
+      "name": "CERULEAN CITY",
+      "x": 24,
+      "y": 2,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_LAVENDER_TOWN",
@@ -715,61 +729,115 @@
     },
     {
       "id": "MAPSEC_VERMILION_CITY",
-      "name": "VERMILION CITY"
+      "name": "VERMILION CITY",
+      "x": 24,
+      "y": 6,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_CELADON_CITY",
-      "name": "CELADON CITY"
+      "name": "CELADON CITY",
+      "x": 21,
+      "y": 4,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_FUCHSIA_CITY",
-      "name": "FUCHSIA CITY"
+      "name": "FUCHSIA CITY",
+      "x": 23,
+      "y": 10,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_CINNABAR_ISLAND",
-      "name": "CINNABAR ISLAND"
+      "name": "CINNABAR ISLAND",
+      "x": 18,
+      "y": 12,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_INDIGO_PLATEAU",
-      "name": "INDIGO PLATEAU"
+      "name": "INDIGO PLATEAU",
+      "x": 15,
+      "y": 0,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_SAFFRON_CITY",
-      "name": "SAFFRON CITY"
+      "name": "SAFFRON CITY",
+      "x": 24,
+      "y": 4,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_4_POKECENTER",
       "name": "ROUTE 4",
-      "name_clone": true
+      "x": 21,
+      "y": 2,
+      "width": 1,
+      "height": 1
     },
     {
-      "id": "MAPSEC_ROUTE_10_POKECENTER",
-      "name": "ROUTE 10",
-      "name_clone": true
+      "id": "MAPSEC_KANTO_UNDERWATER",
+      "name": "UNDERWATER",
+      "x": 15,
+      "y": 9,
+      "width": 3,
+      "height": 3
     },
     {
       "id": "MAPSEC_ROUTE_1",
-      "name": "ROUTE 1"
+      "name": "ROUTE 1",
+      "x": 18,
+      "y": 6,
+      "width": 1,
+      "height": 3
     },
     {
       "id": "MAPSEC_ROUTE_2",
-      "name": "ROUTE 2"
+      "name": "ROUTE 2",
+      "x": 18,
+      "y": 3,
+      "width": 1,
+      "height": 2
     },
     {
       "id": "MAPSEC_ROUTE_3",
-      "name": "ROUTE 3"
+      "name": "ROUTE 3",
+      "x": 19,
+      "y": 2,
+      "width": 2,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_4",
-      "name": "ROUTE 4"
+      "name": "ROUTE 4",
+      "x": 21,
+      "y": 2,
+      "width": 3,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_5",
-      "name": "ROUTE 5"
+      "name": "ROUTE 5",
+      "x": 24,
+      "y": 3,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_6",
-      "name": "ROUTE 6"
+      "name": "ROUTE 6",
+      "x": 24,
+      "y": 5,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_7",
@@ -789,7 +857,11 @@
     },
     {
       "id": "MAPSEC_ROUTE_11",
-      "name": "ROUTE 11"
+      "name": "ROUTE 11",
+      "x": 25,
+      "y": 6,
+      "width": 3,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_12",
@@ -829,11 +901,19 @@
     },
     {
       "id": "MAPSEC_ROUTE_21",
-      "name": "ROUTE 21"
+      "name": "ROUTE 21",
+      "x": 18,
+      "y": 10,
+      "width": 1,
+      "height": 2
     },
     {
       "id": "MAPSEC_ROUTE_22",
-      "name": "ROUTE 22"
+      "name": "ROUTE 22",
+      "x": 16,
+      "y": 4,
+      "width": 2,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_23",
@@ -841,19 +921,35 @@
     },
     {
       "id": "MAPSEC_ROUTE_24",
-      "name": "ROUTE 24"
+      "name": "ROUTE 24",
+      "x": 24,
+      "y": 0,
+      "width": 1,
+      "height": 2
     },
     {
       "id": "MAPSEC_ROUTE_25",
-      "name": "ROUTE 25"
+      "name": "ROUTE 25",
+      "x": 25,
+      "y": 0,
+      "width": 2,
+      "height": 1
     },
     {
       "id": "MAPSEC_VIRIDIAN_FOREST",
-      "name": "VIRIDIAN FOREST"
+      "name": "VIRIDIAN FOREST",
+      "x": 18,
+      "y": 3,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_MT_MOON",
-      "name": "MT. MOON"
+      "name": "MT. MOON",
+      "x": 21,
+      "y": 2,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_S_S_ANNE",
@@ -865,17 +961,19 @@
     },
     {
       "id": "MAPSEC_UNDERGROUND_PATH_2",
-      "name": "UNDERGROUND PATH",
-      "name_clone": true
+      "name": "UNDERGROUND PATH"
     },
     {
       "id": "MAPSEC_DIGLETTS_CAVE",
-      "name": "DIGLETT'S CAVE"
+      "name": "DIGLETT'S CAVE",
+      "x": 19,
+      "y": 3,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_KANTO_VICTORY_ROAD",
-      "name": "VICTORY ROAD",
-      "name_clone": true
+      "name": "VICTORY ROAD"
     },
     {
       "id": "MAPSEC_ROCKET_HIDEOUT",
@@ -883,16 +981,23 @@
     },
     {
       "id": "MAPSEC_SILPH_CO",
-      "name": "SILPH CO."
+      "name": "SILPH CO.",
+      "x": 24,
+      "y": 4,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_POKEMON_MANSION",
-      "name": "POKéMON MANSION"
+      "name": "POKéMON MANSION",
+      "x": 18,
+      "y": 12,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_KANTO_SAFARI_ZONE",
-      "name": "SAFARI ZONE",
-      "name_clone": true
+      "name": "SAFARI ZONE"
     },
     {
       "id": "MAPSEC_POKEMON_LEAGUE",
@@ -967,20 +1072,36 @@
       "name": "THREE ISLE PORT"
     },
     {
-      "id": "MAPSEC_SEVII_ISLE_6",
-      "name": "SEVII ISLE 6"
+      "id": "MAPSEC_MT_SILVER",
+      "name": "MT. SILVER",
+      "x": 12,
+      "y": 4,
+      "width": 1,
+      "height": 1
     },
     {
-      "id": "MAPSEC_SEVII_ISLE_7",
-      "name": "SEVII ISLE 7"
+      "id": "MAPSEC_OPEN_OCEAN",
+      "name": "OPEN OCEAN",
+      "x": 15,
+      "y": 9,
+      "width": 3,
+      "height": 3
     },
     {
-      "id": "MAPSEC_SEVII_ISLE_8",
-      "name": "SEVII ISLE 8"
+      "id": "MAPSEC_TOHJO_FALLS",
+      "name": "TOHJO FALLS",
+      "x": 13,
+      "y": 8,
+      "width": 1,
+      "height": 1
     },
     {
-      "id": "MAPSEC_SEVII_ISLE_9",
-      "name": "SEVII ISLE 9"
+      "id": "MAPSEC_UNDERWATER_27",
+      "name": "UNDERWATER",
+      "x": 12,
+      "y": 8,
+      "width": 3,
+      "height": 1
     },
     {
       "id": "MAPSEC_RESORT_GORGEOUS",
@@ -1031,16 +1152,28 @@
       "name": "TANOBY RUINS"
     },
     {
-      "id": "MAPSEC_SEVII_ISLE_22",
-      "name": "SEVII ISLE 22"
+      "id": "MAPSEC_UNDERWATER_26",
+      "name": "UNDERWATER",
+      "x": 15,
+      "y": 4,
+      "width": 1,
+      "height": 5
     },
     {
-      "id": "MAPSEC_SEVII_ISLE_23",
-      "name": "SEVII ISLE 23"
+      "id": "MAPSEC_UNDERWATER_21",
+      "name": "UNDERWATER",
+      "x": 18,
+      "y": 10,
+      "width": 1,
+      "height": 2
     },
     {
-      "id": "MAPSEC_SEVII_ISLE_24",
-      "name": "SEVII ISLE 24"
+      "id": "MAPSEC_ROUTE_28",
+      "name": "ROUTE 28",
+      "x": 13,
+      "y": 4,
+      "width": 2,
+      "height": 1
     },
     {
       "id": "MAPSEC_NAVEL_ROCK_FRLG",
@@ -1064,8 +1197,7 @@
     },
     {
       "id": "MAPSEC_TRAINER_TOWER_2",
-      "name": "TRAINER TOWER",
-      "name_clone": true
+      "name": "TRAINER TOWER"
     },
     {
       "id": "MAPSEC_DOTTED_HOLE",
@@ -1084,8 +1216,12 @@
       "name": "ALTERING CAVE"
     },
     {
-      "id": "MAPSEC_TANOBY_CHAMBERS",
-      "name": "TANOBY CHAMBERS"
+      "id": "MAPSEC_RUINS_OF_ALPH_INTERIOR",
+      "name": "RUINS OF ALPH",
+      "x": 3,
+      "y": 4,
+      "width": 1,
+      "height": 2
     },
     {
       "id": "MAPSEC_THREE_ISLE_PATH",
@@ -1238,6 +1374,286 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_GOLDENROD_CITY",
+      "name": "GOLDENROD CITY",
+      "x": 0,
+      "y": 7,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ROUTE_34",
+      "name": "ROUTE 34",
+      "x": 0,
+      "y": 8,
+      "width": 1,
+      "height": 4
+    },
+    {
+      "id": "MAPSEC_ILEX_FOREST",
+      "name": "ILEX FOREST",
+      "x": 1,
+      "y": 11,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_AZALEA_TOWN",
+      "name": "AZALEA TOWN",
+      "x": 2,
+      "y": 11,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ROUTE_35",
+      "name": "ROUTE 35",
+      "x": 0,
+      "y": 4,
+      "width": 1,
+      "height": 3
+    },
+    {
+      "id": "MAPSEC_NATIONAL_PARK",
+      "name": "NATIONAL PARK",
+      "x": 0,
+      "y": 3,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ROUTE_36",
+      "name": "ROUTE 36",
+      "x": 1,
+      "y": 3,
+      "width": 3,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ROUTE_37",
+      "name": "ROUTE 37",
+      "x": 2,
+      "y": 2,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ECRUTEAK_CITY",
+      "name": "ECRUTEAK CITY",
+      "x": 2,
+      "y": 1,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_BURNED_TOWER",
+      "name": "BURNED TOWER",
+      "x": 2,
+      "y": 1,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_TIN_TOWER",
+      "name": "TIN TOWER",
+      "x": 2,
+      "y": 1,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_VIOLET_CITY",
+      "name": "VIOLET CITY",
+      "x": 4,
+      "y": 3,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_SPROUT_TOWER",
+      "name": "SPROUT TOWER",
+      "x": 4,
+      "y": 3,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ROUTE_32",
+      "name": "ROUTE 32",
+      "x": 4,
+      "y": 4,
+      "width": 1,
+      "height": 7
+    },
+    {
+      "id": "MAPSEC_RUINS_OF_ALPH",
+      "name": "RUINS OF ALPH",
+      "x": 3,
+      "y": 4,
+      "width": 1,
+      "height": 2
+    },
+    {
+      "id": "MAPSEC_UNION_CAVE",
+      "name": "UNION CAVE"
+    },
+    {
+      "id": "MAPSEC_ROUTE_33",
+      "name": "ROUTE 33",
+      "x": 3,
+      "y": 11,
+      "width": 2,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_SLOWPOKE_WELL",
+      "name": "SLOWPOKE WELL",
+      "x": 2,
+      "y": 11,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ROUTE_31",
+      "name": "ROUTE 31",
+      "x": 5,
+      "y": 3,
+      "width": 2,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_DARK_CAVE",
+      "name": "DARK CAVE",
+      "x": 8,
+      "y": 4,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ROUTE_30",
+      "name": "ROUTE 30",
+      "x": 6,
+      "y": 4,
+      "width": 1,
+      "height": 4
+    },
+    {
+      "id": "MAPSEC_CHERRYGROVE_CITY",
+      "name": "CHERRYGROVE CITY",
+      "x": 6,
+      "y": 8,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ROUTE_29",
+      "name": "ROUTE 29",
+      "x": 7,
+      "y": 8,
+      "width": 4,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_NEW_BARK_TOWN",
+      "name": "NEW BARK TOWN",
+      "x": 11,
+      "y": 8,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ROUTE_46",
+      "name": "ROUTE 46",
+      "x": 9,
+      "y": 5,
+      "width": 1,
+      "height": 3
+    },
+    {
+      "id": "MAPSEC_ROUTE_45",
+      "name": "ROUTE 45",
+      "x": 10,
+      "y": 2,
+      "width": 1,
+      "height": 4
+    },
+    {
+      "id": "MAPSEC_BLACKTHORN_CITY",
+      "name": "BLACKTHORN CITY",
+      "x": 10,
+      "y": 1,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_DRAGONS_DEN",
+      "name": "DRAGON'S DEN",
+      "x": 10,
+      "y": 1,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ICE_PATH",
+      "name": "ICE PATH"
+    },
+    {
+      "id": "MAPSEC_ROUTE_26",
+      "name": "ROUTE 26",
+      "x": 15,
+      "y": 4,
+      "width": 1,
+      "height": 5
+    },
+    {
+      "id": "MAPSEC_ROUTE_27",
+      "name": "ROUTE 27",
+      "x": 12,
+      "y": 8,
+      "width": 3,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_MAGNET_TRAIN",
+      "name": "MAGNET TRAIN"
+    },
+    {
+      "id": "MAPSEC_OLIVINE_CITY",
+      "name": "OLIVINE CITY"
+    },
+    {
+      "id": "MAPSEC_MAHOGANY_TOWN",
+      "name": "MAHOGANY TOWN",
+      "x": 7,
+      "y": 1,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ROUTE_32_POKECENTER",
+      "name": "ROUTE 32",
+      "x": 4,
+      "y": 9,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ROUTE_38",
+      "name": "ROUTE 38"
+    },
+    {
+      "id": "MAPSEC_ROUTE_42",
+      "name": "ROUTE 42"
+    },
+    {
+      "id": "MAPSEC_ROUTE_43",
+      "name": "ROUTE 43"
+    },
+    {
+      "id": "MAPSEC_ROUTE_44",
+      "name": "ROUTE 44"
     }
   ]
 }

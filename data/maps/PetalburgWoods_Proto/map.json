@@ -1,0 +1,83 @@
+{
+  "id": "MAP_PETALBURG_WOODS_PROTO",
+  "name": "PetalburgWoods_Proto",
+  "layout": "LAYOUT_PETALBURG_WOODS_PROTO",
+  "music": "MUS_PETALBURG_WOODS",
+  "region_map_section": "MAPSEC_PETALBURG_WOODS",
+  "requires_flash": false,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 21,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_15"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 21,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_16"
+    },
+    {
+      "local_id": "LOCALID_CELEBI2",
+      "graphics_id": "OBJ_EVENT_GFX_LEAF",
+      "x": 38,
+      "y": 33,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PetalburgWoods_Proto_Celebi",
+      "flag": "FLAG_UNUSED_0x910"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 14,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE104_FESTA",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 15,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE104_FESTA",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 38,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_PETALBURG_WOODS_PROTO",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

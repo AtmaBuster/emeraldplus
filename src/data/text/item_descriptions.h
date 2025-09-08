@@ -1012,6 +1012,11 @@ static const u8 sContestPassDesc[] = _(
     "for entering\n"
     "POKéMON CONTESTS.");
 
+static const u8 sTanzakuDesc[] = _(
+    "A colored strip of\n"
+    "paper, said to\n"
+    "grant wishes.");
+
 static const u8 sWailmerPailDesc[] = _(
     "A tool used for\n"
     "watering BERRIES\n"
@@ -1407,6 +1412,11 @@ static const u8 sHM08Desc[] = _(
     "Dives underwater\n"
     "the 1st turn, then\n"
     "attacks next turn.");
+
+static const u8 sGSBallDesc[] = _(
+    "A mysterious BALL.\n"
+    "Very little is known\n"
+    "about it.");
 
 // FireRed/LeafGreen key items
 static const u8 sOaksParcelDesc[] = _(

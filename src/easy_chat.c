@@ -113,6 +113,7 @@ static u8 GetLastAlphabetColumn(u8);
 static void ReduceToValidWordSelectColumn(void);
 static bool8 IsSelectedWordIndexInvalid(void);
 static int DidPlayerInputMysteryGiftPhrase(void);
+static int DidPlayerInputJirachiPhrase(void);
 static u16 DidPlayerInputABerryMasterWifePhrase(void);
 static bool8 InitEasyChatScreenControl_(void);
 static void LoadEasyChatPalettes(void);
@@ -678,6 +679,18 @@ static const struct EasyChatScreenTemplate sEasyChatScreenTemplates[] = {
         .confirmText1 = gText_TheAnswer,
         .confirmText2 = gText_IsAsShownOkay,
     },
+    {
+        .type = EASY_CHAT_TYPE_WHITE_ROCK,
+        .numColumns = 2,
+        .numRows = 2,
+        .frameId = FRAMEID_GENERAL_2x2,
+        .fourFooterOptions = FALSE,
+        .titleText = gText_WhiteRock,
+        .instructionsText1 = gText_CombineFourWordsOrPhrases,
+        .instructionsText2 = gText_AndMakeAWish,
+        .confirmText1 = gText_TheAnswer,
+        .confirmText2 = gText_IsAsShownOkay,
+    },
 };
 
 // IDs are used indirectly as indexes into gEasyChatWordsByLetterPointers
@@ -695,6 +708,13 @@ static const u16 sMysteryGiftPhrase[NUM_QUESTIONNAIRE_WORDS] = {
     EC_WORD_TOGETHER,
     EC_WORD_WITH,
     EC_WORD_ALL,
+};
+
+static const u16 sJirachiEventPhrase[NUM_QUESTIONNAIRE_WORDS] = {
+    EC_WORD_I,
+    EC_WORD_WANT,
+    EC_WORD_RARE,
+    EC_WORD_POKEMON,
 };
 
 static const u16 sBerryMasterWifePhrases[][2] = {
@@ -1537,6 +1557,7 @@ void ShowEasyChatScreen(void)
         words = gSaveBlock2Ptr->apprentices[0].speechWon;
         break;
     case EASY_CHAT_TYPE_QUESTIONNAIRE:
+    case EASY_CHAT_TYPE_WHITE_ROCK:
         words = GetQuestionnaireWordsPtr();
         break;
     default:
@@ -2163,7 +2184,7 @@ static u16 TryConfirmWords(void)
         sEasyChatScreen->inputState = INPUTSTATE_CONFIRM_WORDS_YES_NO;
         return ECFUNC_PROMPT_CONFIRM;
     }
-    else if (sEasyChatScreen->type == EASY_CHAT_TYPE_QUESTIONNAIRE)
+    else if (sEasyChatScreen->type == EASY_CHAT_TYPE_QUESTIONNAIRE || sEasyChatScreen->type == EASY_CHAT_TYPE_WHITE_ROCK)
     {
         sEasyChatScreen->inputState = INPUTSTATE_CONFIRM_WORDS_YES_NO;
         return ECFUNC_PROMPT_CONFIRM;
@@ -2975,6 +2996,12 @@ static void SetSpecialEasyChatResult(void)
         else
             gSpecialVar_0x8004 = 0;
         break;
+    case EASY_CHAT_TYPE_WHITE_ROCK:
+        if (DidPlayerInputJirachiPhrase())
+            gSpecialVar_0x8004 = 2;
+        else
+            gSpecialVar_0x8004 = 0;
+        break;
     case EASY_CHAT_TYPE_TRENDY_PHRASE:
         BufferCurrentPhraseToStringVar2();
         gSpecialVar_0x8004 = TrySetTrendyPhrase(sEasyChatScreen->currentPhrase);
@@ -2988,6 +3015,11 @@ static void SetSpecialEasyChatResult(void)
 static int DidPlayerInputMysteryGiftPhrase(void)
 {
     return !IsPhraseDifferentThanPlayerInput(sMysteryGiftPhrase, ARRAY_COUNT(sMysteryGiftPhrase));
+}
+
+static int DidPlayerInputJirachiPhrase(void)
+{
+    return !IsPhraseDifferentThanPlayerInput(sJirachiEventPhrase, ARRAY_COUNT(sJirachiEventPhrase));
 }
 
 static u16 DidPlayerInputABerryMasterWifePhrase(void)

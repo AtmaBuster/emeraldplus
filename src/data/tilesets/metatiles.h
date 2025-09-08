@@ -207,3 +207,28 @@ const u16 gMetatileAttributes_MysteryEventsHouse[] = INCBIN_U16("data/tilesets/s
 
 const u16 gMetatiles_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/union_room/metatiles.bin");
 const u16 gMetatileAttributes_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/union_room/metatile_attributes.bin");
+
+
+const u16 gMetatiles_GeneralRS[] = INCBIN_U16("data/tilesets/primary/general_rs/metatiles.bin");
+const u16 gMetatileAttributes_GeneralRS[] = INCBIN_U16("data/tilesets/primary/general_rs/metatile_attributes.bin");
+
+const u16 gMetatiles_RustboroRS[] = INCBIN_U16("data/tilesets/secondary/rustboro_rs/metatiles.bin");
+const u16 gMetatileAttributes_RustboroRS[] = INCBIN_U16("data/tilesets/secondary/rustboro_rs/metatile_attributes.bin");
+
+const u16 gMetatiles_FallarborRS[] = INCBIN_U16("data/tilesets/secondary/fallarbor_rs/metatiles.bin");
+const u16 gMetatileAttributes_FallarborRS[] = INCBIN_U16("data/tilesets/secondary/fallarbor_rs/metatile_attributes.bin");
+
+const u16 gMetatiles_RusturfTunnelRS[] = INCBIN_U16("data/tilesets/secondary/rusturf_tunnel_rs/metatiles.bin");
+const u16 gMetatileAttributes_RusturfTunnelRS[] = INCBIN_U16("data/tilesets/secondary/rusturf_tunnel_rs/metatile_attributes.bin");
+
+const u16 gMetatiles_MeteorFallsRS[] = INCBIN_U16("data/tilesets/secondary/meteor_falls_rs/metatiles.bin");
+const u16 gMetatileAttributes_MeteorFallsRS[] = INCBIN_U16("data/tilesets/secondary/meteor_falls_rs/metatile_attributes.bin");
+
+const u16 gMetatiles_CaveRS[] = INCBIN_U16("data/tilesets/secondary/cave_rs/metatiles.bin");
+const u16 gMetatileAttributes_CaveRS[] = INCBIN_U16("data/tilesets/secondary/cave_rs/metatile_attributes.bin");
+
+const u16 gMetatiles_Kanto1[] = INCBIN_U16("data/tilesets/secondary/kanto_1/metatiles.bin");
+const u16 gMetatileAttributes_Kanto1[] = INCBIN_U16("data/tilesets/secondary/kanto_1/metatile_attributes.bin");
+
+const u16 gMetatiles_Johto1[] = INCBIN_U16("data/tilesets/secondary/johto_1/metatiles.bin");
+const u16 gMetatileAttributes_Johto1[] = INCBIN_U16("data/tilesets/secondary/johto_1/metatile_attributes.bin");

@@ -12,6 +12,8 @@ static void StartTeleportFieldEffect(void);
 
 bool8 SetUpFieldMove_Teleport(void)
 {
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_ROUTE104_FESTA))
+    	return FALSE;
     if (Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) == TRUE)
     {
         gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;

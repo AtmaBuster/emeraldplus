@@ -1,0 +1,97 @@
+{
+  "id": "MAP_DARK_CAVE_VIOLET_ENTRANCE",
+  "name": "DarkCaveVioletEntrance",
+  "layout": "LAYOUT_DARK_CAVE_VIOLET_ENTRANCE",
+  "music": "MUS_RG_VIRIDIAN_FOREST",
+  "region_map_section": "MAPSEC_DARK_CAVE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE31",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 41,
+      "y": 37,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE46",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 24,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_DARK_CAVE_BLACKTHORN_ENTRANCE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_DARK_CAVE_VIOLET_LIGHT_1",
+      "var_value": "0",
+      "script": "DarkCaveVioletEntrance_EventScript_FlashTrigger1"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_DARK_CAVE_VIOLET_LIGHT_2",
+      "var_value": "0",
+      "script": "DarkCaveVioletEntrance_EventScript_FlashTrigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_DARK_CAVE_VIOLET_LIGHT_3",
+      "var_value": "0",
+      "script": "DarkCaveVioletEntrance_EventScript_FlashTrigger3"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_DARK_CAVE_VIOLET_LIGHT_4",
+      "var_value": "0",
+      "script": "DarkCaveVioletEntrance_EventScript_FlashTrigger4"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_DARK_CAVE_VIOLET_LIGHT_5",
+      "var_value": "0",
+      "script": "DarkCaveVioletEntrance_EventScript_FlashTrigger5"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_DARK_CAVE_VIOLET_LIGHT_6",
+      "var_value": "0",
+      "script": "DarkCaveVioletEntrance_EventScript_FlashTrigger6"
+    }
+  ],
+  "bg_events": []
+}

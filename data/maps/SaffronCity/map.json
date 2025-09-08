@@ -1,0 +1,74 @@
+{
+  "id": "MAP_SAFFRON_CITY",
+  "name": "SaffronCity",
+  "layout": "LAYOUT_SAFFRON_CITY",
+  "music": "MUS_RG_PEWTER",
+  "region_map_section": "MAPSEC_SAFFRON_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE6",
+      "offset": 22,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE5",
+      "offset": 18,
+      "direction": "up"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 34,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE5",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 35,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE5",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 34,
+      "y": 43,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE6",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 35,
+      "y": 43,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE6",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 24,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_SAFFRON_CITY",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 19,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_GOLDENROD_CITY",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

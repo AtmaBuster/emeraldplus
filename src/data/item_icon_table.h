@@ -287,7 +287,7 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_SUPER_ROD] = {gItemIcon_SuperRod, gItemIconPalette_SuperRod},
     [ITEM_SS_TICKET] = {gItemIcon_SSTicket, gItemIconPalette_SSTicket},
     [ITEM_CONTEST_PASS] = {gItemIcon_ContestPass, gItemIconPalette_ContestPass},
-    [ITEM_10B] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
+    [ITEM_TANZAKU] = {gItemIcon_Tanzaku, gItemIconPalette_Tanzaku},
     [ITEM_WAILMER_PAIL] = {gItemIcon_WailmerPail, gItemIconPalette_WailmerPail},
     [ITEM_DEVON_GOODS] = {gItemIcon_DevonGoods, gItemIconPalette_DevonGoods},
     [ITEM_SOOT_SACK] = {gItemIcon_SootSack, gItemIconPalette_SootSack},
@@ -369,7 +369,7 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_HM07] = {gItemIcon_HM, gItemIconPalette_WaterTMHM},
     [ITEM_HM08] = {gItemIcon_HM, gItemIconPalette_WaterTMHM},
     // ????????
-    [ITEM_15B] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
+    [ITEM_GS_BALL] = {gItemIcon_GSBall, gItemIconPalette_GSBall},
     [ITEM_15C] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     // FireRed/LeafGreen key items
     [ITEM_OAKS_PARCEL] = {gItemIcon_OaksParcel, gItemIconPalette_OaksParcel},

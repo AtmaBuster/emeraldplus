@@ -42,6 +42,7 @@ static const u16 sDoorNullPalette5[16] = {};
 static const u8 sDoorAnimTiles_General[] = INCBIN_U8("graphics/door_anims/general.4bpp");
 static const u16 sDoorNullPalette6[16] = {};
 static const u8 sDoorAnimTiles_PokeCenter[] = INCBIN_U8("graphics/door_anims/poke_center.4bpp");
+static const u8 sDoorAnimTiles_PokeCenterLarge[] = INCBIN_U8("graphics/door_anims/poke_center_large.4bpp");
 static const u8 sDoorAnimTiles_Gym[] = INCBIN_U8("graphics/door_anims/gym.4bpp");
 static const u8 sDoorAnimTiles_PokeMart[] = INCBIN_U8("graphics/door_anims/poke_mart.4bpp");
 static const u8 sDoorAnimTiles_RustboroTan[] = INCBIN_U8("graphics/door_anims/rustboro_tan.4bpp");
@@ -277,6 +278,8 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_BattleTent_Door,                              DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_BattleTentInterior, sDoorAnimPalettes_BattleTentInterior},
     {METATILE_TrainerHill_Door_Elevator_Lobby,              DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_TrainerHillLobbyElevator, sDoorAnimPalettes_TrainerHillLobbyElevator},
     {METATILE_TrainerHill_Door_Elevator_Roof,               DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_TrainerHillRoofElevator, sDoorAnimPalettes_TrainerHillRoofElevator},
+    {METATILE_Kanto1_LargePMCDoor,                          DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_PokeCenterLarge, sDoorAnimPalettes_PokeCenter},
+    {METATILE_Johto1_LargePMCDoor,                          DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_PokeCenterLarge, sDoorAnimPalettes_PokeCenter},
     {},
 };
 

@@ -562,6 +562,9 @@ const u32 gItemIconPalette_SSTicket[] = INCBIN_U32("graphics/items/icon_palettes
 const u32 gItemIcon_ContestPass[] = INCBIN_U32("graphics/items/icons/contest_pass.4bpp.lz");
 const u32 gItemIconPalette_ContestPass[] = INCBIN_U32("graphics/items/icon_palettes/contest_pass.gbapal.lz");
 
+const u32 gItemIcon_Tanzaku[] = INCBIN_U32("graphics/items/icons/tanzaku.4bpp.lz");
+const u32 gItemIconPalette_Tanzaku[] = INCBIN_U32("graphics/items/icon_palettes/tanzaku.gbapal.lz");
+
 const u32 gItemIcon_WailmerPail[] = INCBIN_U32("graphics/items/icons/wailmer_pail.4bpp.lz");
 const u32 gItemIconPalette_WailmerPail[] = INCBIN_U32("graphics/items/icon_palettes/wailmer_pail.gbapal.lz");
 
@@ -652,6 +655,9 @@ const u32 gItemIconPalette_RockTMHM[] = INCBIN_U32("graphics/items/icon_palettes
 const u32 gItemIconPalette_FlyingTMHM[] = INCBIN_U32("graphics/items/icon_palettes/flying_tm_hm.gbapal.lz");
 
 const u32 gItemIcon_HM[] = INCBIN_U32("graphics/items/icons/hm.4bpp.lz");
+
+const u32 gItemIcon_GSBall[] = INCBIN_U32("graphics/items/icons/gs_ball.4bpp.lz");
+const u32 gItemIconPalette_GSBall[] = INCBIN_U32("graphics/items/icon_palettes/gsball.gbapal.lz");
 
 // FireRed/LeafGreen key items
 

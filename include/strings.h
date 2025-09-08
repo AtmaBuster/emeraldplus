@@ -2654,6 +2654,8 @@ extern const u8 gText_FansQuestion[];
 extern const u8 gText_TheImage[];
 extern const u8 gText_Questionnaire[];
 extern const u8 gText_AndFillOutTheQuestionnaire[];
+extern const u8 gText_WhiteRock[];
+extern const u8 gText_AndMakeAWish[];
 extern const u8 gText_DelAll[];
 extern const u8 gText_Cancel5[];
 extern const u8 gText_Ok2[];

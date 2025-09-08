@@ -3244,13 +3244,14 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
-    [ITEM_10B] =
+    [ITEM_TANZAKU] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
+        .name = _("TANZAKU"),
+        .itemId = ITEM_TANZAKU,
         .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
+        .description = sTanzakuDesc,
+	.importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
@@ -4159,13 +4160,14 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_15B] =
+    [ITEM_GS_BALL] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
+        .name = _("GS BALL"),
+        .itemId = ITEM_GS_BALL,
         .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
+        .description = sGSBallDesc,
+	.importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },

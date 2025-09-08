@@ -4,6 +4,9 @@ LilycoveCity_CoveLilyMotel_2F_MapScripts::
 LilycoveCity_CoveLilyMotel_2F_EventScript_GameDesigner::
 	lock
 	faceplayer
+	goto_if_unset FLAG_UNUSED_0x912, Diploma_JustDoIt
+	goto_if_unset FLAG_UNUSED_0x902, Diploma_GiveTanzaku
+Diploma_JustDoIt::
 	call_if_unset FLAG_TEMP_2, LilycoveCity_CoveLilyMotel_2F_EventScript_ShowMeCompletedDex
 	call_if_set FLAG_TEMP_2, LilycoveCity_CoveLilyMotel_2F_EventScript_ShowDiploma
 	specialvar VAR_RESULT, HasAllHoennMons
@@ -30,6 +33,16 @@ LilycoveCity_CoveLilyMotel_2F_EventScript_ShowDiploma::
 	waitstate
 	release
 	end
+
+Diploma_GiveTanzaku::
+	msgbox Diploma_TanzakuGift
+	giveitem ITEM_TANZAKU
+	setflag FLAG_UNUSED_0x902
+	release
+	end
+
+Diploma_TanzakuGift::
+	.string "Here. Take this as a present.$"
 
 LilycoveCity_CoveLilyMotel_2F_EventScript_Programmer::
 	msgbox LilycoveCity_CoveLilyMotel_2F_Text_ImTheProgrammer, MSGBOX_NPC

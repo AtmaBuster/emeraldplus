@@ -1057,3 +1057,129 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/Route104_Festa/scripts.inc"
+
+	.include "data/maps/Route116_Proto/scripts.inc"
+
+	.include "data/maps/RustboroCity_Proto/scripts.inc"
+
+	.include "data/maps/RusturfTunnel_Proto/scripts.inc"
+
+	.include "data/maps/Route115_Proto/scripts.inc"
+
+	.include "data/maps/MeteorFalls_Proto/scripts.inc"
+
+	.include "data/maps/MeteorFallsB1F_Proto/scripts.inc"
+
+	.include "data/maps/PetalburgWoods_Proto/scripts.inc"
+
+	.include "data/maps/VermilionCity/scripts.inc"
+
+	.include "data/maps/Route6/scripts.inc"
+
+	.include "data/maps/Route11/scripts.inc"
+
+	.include "data/maps/Route2/scripts.inc"
+
+	.include "data/maps/DiglettsCaveEntrance/scripts.inc"
+
+	.include "data/maps/PewterCity/scripts.inc"
+
+	.include "data/maps/Route3/scripts.inc"
+
+	.include "data/maps/Route4/scripts.inc"
+
+	.include "data/maps/DiglettsCave/scripts.inc"
+
+	.include "data/maps/ViridianCity/scripts.inc"
+
+	.include "data/maps/CinnabarIsland/scripts.inc"
+
+	.include "data/maps/Route1/scripts.inc"
+
+	.include "data/maps/Route21/scripts.inc"
+
+	.include "data/maps/PalletTown/scripts.inc"
+
+	.include "data/maps/Route22/scripts.inc"
+
+	.include "data/maps/SaffronCity/scripts.inc"
+
+	.include "data/maps/VermilionCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/VermilionCity_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/NewBarkTown/scripts.inc"
+
+	.include "data/maps/AzaleaTown/scripts.inc"
+
+	.include "data/maps/VioletCity/scripts.inc"
+
+	.include "data/maps/EcruteakCity/scripts.inc"
+
+	.include "data/maps/BlackthornCity/scripts.inc"
+
+	.include "data/maps/GoldenrodCity/scripts.inc"
+
+	.include "data/maps/CherrygroveCity/scripts.inc"
+
+	.include "data/maps/Route26/scripts.inc"
+
+	.include "data/maps/Route37/scripts.inc"
+
+	.include "data/maps/Route45/scripts.inc"
+
+	.include "data/maps/Route27/scripts.inc"
+
+	.include "data/maps/Route35/scripts.inc"
+
+	.include "data/maps/Route29/scripts.inc"
+
+	.include "data/maps/Route36/scripts.inc"
+
+	.include "data/maps/Route46/scripts.inc"
+
+	.include "data/maps/Route32/scripts.inc"
+
+	.include "data/maps/Route30/scripts.inc"
+
+	.include "data/maps/Route31/scripts.inc"
+
+	.include "data/maps/Route33/scripts.inc"
+
+	.include "data/maps/Route34/scripts.inc"
+
+	.include "data/maps/NationalPark/scripts.inc"
+
+	.include "data/maps/TohjoFalls/scripts.inc"
+
+	.include "data/maps/Underwater_Route27/scripts.inc"
+
+	.include "data/maps/DarkCaveVioletEntrance/scripts.inc"
+
+	.include "data/maps/DarkCaveBlackthornEntrance/scripts.inc"
+
+	.include "data/maps/CeruleanCity/scripts.inc"
+
+	.include "data/maps/Route25/scripts.inc"
+
+	.include "data/maps/Route24/scripts.inc"
+
+	.include "data/maps/Route5/scripts.inc"
+
+	.include "data/maps/RuinsOfAlph/scripts.inc"
+
+	.include "data/maps/Route28/scripts.inc"
+
+	.include "data/maps/MtSilverOutside/scripts.inc"
+
+	.include "data/maps/RuinsOfAlphMainChamber/scripts.inc"
+
+	.include "data/maps/Underwater_Route21/scripts.inc"
+
+	.include "data/maps/Underwater_Route26/scripts.inc"
+
+	.include "data/maps/OpenOcean/scripts.inc"
+
+	.include "data/maps/Underwater_OpenOcean/scripts.inc"

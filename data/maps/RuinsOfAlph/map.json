@@ -1,0 +1,93 @@
+{
+  "id": "MAP_RUINS_OF_ALPH",
+  "name": "RuinsOfAlph",
+  "layout": "LAYOUT_RUINS_OF_ALPH",
+  "music": "MUS_RG_MT_MOON",
+  "region_map_section": "MAPSEC_RUINS_OF_ALPH",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE36",
+      "offset": -26,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_VIOLET_CITY",
+      "offset": -20,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE32",
+      "offset": 20,
+      "direction": "right"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 27,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 18,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH_MAIN_CHAMBER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 24,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 4,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 26,
+      "y": 39,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 5,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 11,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_RUINS_OF_ALPH",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 11,
+      "y": 33,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE32",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

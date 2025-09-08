@@ -32,6 +32,10 @@
 #define MAP_GROUP_TOWNS_AND_ROUTES MAP_GROUP(MAP_PETALBURG_CITY)
 #define MAP_GROUP_DUNGEONS MAP_GROUP(MAP_METEOR_FALLS_1F_1R)
 #define MAP_GROUP_SPECIAL_AREA MAP_GROUP(MAP_SAFARI_ZONE_NORTHWEST)
+#define MAP_GROUP_KANTO MAP_GROUP(MAP_VERMILION_CITY)
+#define MAP_GROUP_JOHTO MAP_GROUP(MAP_NEW_BARK_TOWN)
+#define MAP_GROUP_KANTO_DUNGEONS MAP_GROUP(MAP_DIGLETTS_CAVE)
+#define MAP_GROUP_JOHTO_DUNGEONS MAP_GROUP(MAP_TOHJO_FALLS)
 
 #define AREA_SCREEN_WIDTH 32
 #define AREA_SCREEN_HEIGHT 20
@@ -106,6 +110,7 @@ static void CreateAreaUnknownSprites(void);
 static void Task_HandlePokedexAreaScreenInput(u8);
 static void ResetPokedexAreaMapBg(void);
 static void DestroyAreaScreenSprites(void);
+static bool8 MapGroupInCurrentRegion(u8);
 
 static const u32 sAreaGlow_Pal[] = INCBIN_U32("graphics/pokedex/area_glow.gbapal");
 static const u32 sAreaGlow_Gfx[] = INCBIN_U32("graphics/pokedex/area_glow.4bpp.lz");
@@ -239,6 +244,13 @@ static bool8 DrawAreaGlow(void)
     return TRUE;
 }
 
+bool8 MapGroupInCurrentRegion(u8 mapGroup)
+{
+    if (GetPlayerRegion() == REGIONMAP_HOENN)
+        return mapGroup < MAP_GROUP(MAP_VERMILION_CITY);
+    return mapGroup >= MAP_GROUP(MAP_VERMILION_CITY);
+}
+
 static void FindMapsWithMon(u16 species)
 {
     u16 i;
@@ -274,10 +286,14 @@ static void FindMapsWithMon(u16 species)
                 switch (sFeebasData[i][1])
                 {
                 case MAP_GROUP_TOWNS_AND_ROUTES:
+		case MAP_GROUP_KANTO:
+		case MAP_GROUP_JOHTO:
                     SetAreaHasMon(sFeebasData[i][1], sFeebasData[i][2]);
                     break;
                 case MAP_GROUP_DUNGEONS:
                 case MAP_GROUP_SPECIAL_AREA:
+		case MAP_GROUP_KANTO_DUNGEONS:
+		case MAP_GROUP_JOHTO_DUNGEONS:
                     SetSpecialMapHasMon(sFeebasData[i][1], sFeebasData[i][2]);
                     break;
                 }
@@ -287,15 +303,19 @@ static void FindMapsWithMon(u16 species)
         // Add regular species to the area map
         for (i = 0; gWildMonHeaders[i].mapGroup != MAP_GROUP(MAP_UNDEFINED); i++)
         {
-            if (MapHasSpecies(&gWildMonHeaders[i], species))
+            if (MapHasSpecies(&gWildMonHeaders[i], species) && MapGroupInCurrentRegion(gWildMonHeaders[i].mapGroup))
             {
                 switch (gWildMonHeaders[i].mapGroup)
                 {
                 case MAP_GROUP_TOWNS_AND_ROUTES:
+		case MAP_GROUP_KANTO:
+		case MAP_GROUP_JOHTO:
                     SetAreaHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
                     break;
                 case MAP_GROUP_DUNGEONS:
                 case MAP_GROUP_SPECIAL_AREA:
+		case MAP_GROUP_KANTO_DUNGEONS:
+		case MAP_GROUP_JOHTO_DUNGEONS:
                     SetSpecialMapHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
                     break;
                 }
@@ -306,7 +326,7 @@ static void FindMapsWithMon(u16 species)
     {
         // This is the roamer's species, show where the roamer is currently
         sPokedexAreaScreen->numSpecialAreas = 0;
-        if (roamer->active)
+        if (roamer->active && GetPlayerRegion() == REGIONMAP_HOENN)
         {
             GetRoamerLocation(&sPokedexAreaScreen->overworldAreasWithMons[0].mapGroup, &sPokedexAreaScreen->overworldAreasWithMons[0].mapNum);
             sPokedexAreaScreen->overworldAreasWithMons[0].regionMapSectionId = Overworld_GetMapHeaderByGroupAndId(sPokedexAreaScreen->overworldAreasWithMons[0].mapGroup, sPokedexAreaScreen->overworldAreasWithMons[0].mapNum)->regionMapSectionId;
@@ -433,7 +453,12 @@ static void BuildAreaGlowTilemap(void)
         {
             for (x = 0; x < AREA_SCREEN_WIDTH; x++)
             {
-                if (GetRegionMapSecIdAt(x, y) == sPokedexAreaScreen->overworldAreasWithMons[i].regionMapSectionId)
+	        u16 mapSecId = GetRegionMapSecIdAt(x, y);
+		if (mapSecId == MAPSEC_ROUTE_4_POKECENTER)
+		    mapSecId = MAPSEC_ROUTE_4;
+		if (mapSecId == MAPSEC_ROUTE_32_POKECENTER)
+		    mapSecId = MAPSEC_ROUTE_32;
+                if (mapSecId == sPokedexAreaScreen->overworldAreasWithMons[i].regionMapSectionId)
                     sPokedexAreaScreen->areaGlowTilemap[j] = GLOW_FULL;
                 j++;
             }

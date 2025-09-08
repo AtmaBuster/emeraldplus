@@ -43,11 +43,25 @@ static void TilesetAnim_MauvilleGym(u16);
 static void TilesetAnim_BikeShop(u16);
 static void TilesetAnim_BattlePyramid(u16);
 static void TilesetAnim_BattleDome(u16);
+
+static void TilesetAnim_GeneralRS(u16);
+static void TilesetAnim_RustboroRS(u16);
+
 static void QueueAnimTiles_General_Flower(u16);
 static void QueueAnimTiles_General_Water(u16);
 static void QueueAnimTiles_General_SandWaterEdge(u16);
 static void QueueAnimTiles_General_Waterfall(u16);
 static void QueueAnimTiles_General_LandWaterEdge(u16);
+
+static void QueueAnimTiles_GeneralRS_Flower(u16);
+static void QueueAnimTiles_GeneralRS_Water(u16);
+static void QueueAnimTiles_GeneralRS_SandWaterEdge(u16);
+static void QueueAnimTiles_GeneralRS_Waterfall(u16);
+static void QueueAnimTiles_GeneralRS_LandWaterEdge(u16);
+
+static void QueueAnimTiles_RustboroRS_WindyWater(u16, u8);
+static void QueueAnimTiles_RustboroRS_Fountain(u16);
+
 static void QueueAnimTiles_Building_TVTurnedOn(u16);
 static void QueueAnimTiles_Rustboro_WindyWater(u16, u8);
 static void QueueAnimTiles_Rustboro_Fountain(u16);
@@ -1185,4 +1199,212 @@ static void BlendAnimPalette_BattleDome_FloorLightsNoBlend(u16 timer)
         if (!--sSecondaryTilesetAnimCounterMax)
             sSecondaryTilesetAnimCallback = NULL;
     }
+}
+
+void InitTilesetAnim_GeneralRS(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_GeneralRS;
+}
+
+const u16 gTilesetAnims_GeneralRS_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/flower/1.4bpp");
+const u16 gTilesetAnims_GeneralRS_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/flower/0.4bpp");
+const u16 gTilesetAnims_GeneralRS_Flower_Frame2[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/flower/2.4bpp");
+
+const u16 *const gTilesetAnims_GeneralRS_Flower[] = {
+    gTilesetAnims_GeneralRS_Flower_Frame0,
+    gTilesetAnims_GeneralRS_Flower_Frame1,
+    gTilesetAnims_GeneralRS_Flower_Frame0,
+    gTilesetAnims_GeneralRS_Flower_Frame2
+};
+
+const u16 gTilesetAnims_GeneralRS_Water_Frame0[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/water/0.4bpp");
+const u16 gTilesetAnims_GeneralRS_Water_Frame1[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/water/1.4bpp");
+const u16 gTilesetAnims_GeneralRS_Water_Frame2[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/water/2.4bpp");
+const u16 gTilesetAnims_GeneralRS_Water_Frame3[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/water/3.4bpp");
+const u16 gTilesetAnims_GeneralRS_Water_Frame4[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/water/4.4bpp");
+const u16 gTilesetAnims_GeneralRS_Water_Frame5[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/water/5.4bpp");
+const u16 gTilesetAnims_GeneralRS_Water_Frame6[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/water/6.4bpp");
+const u16 gTilesetAnims_GeneralRS_Water_Frame7[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/water/7.4bpp");
+
+const u16 *const gTilesetAnims_GeneralRS_Water[] = {
+    gTilesetAnims_GeneralRS_Water_Frame0,
+    gTilesetAnims_GeneralRS_Water_Frame1,
+    gTilesetAnims_GeneralRS_Water_Frame2,
+    gTilesetAnims_GeneralRS_Water_Frame3,
+    gTilesetAnims_GeneralRS_Water_Frame4,
+    gTilesetAnims_GeneralRS_Water_Frame5,
+    gTilesetAnims_GeneralRS_Water_Frame6,
+    gTilesetAnims_GeneralRS_Water_Frame7
+};
+
+const u16 gTilesetAnims_GeneralRS_SandWaterEdge_Frame0[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/sand_water_edge/0.4bpp");
+const u16 gTilesetAnims_GeneralRS_SandWaterEdge_Frame1[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/sand_water_edge/1.4bpp");
+const u16 gTilesetAnims_GeneralRS_SandWaterEdge_Frame2[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/sand_water_edge/2.4bpp");
+const u16 gTilesetAnims_GeneralRS_SandWaterEdge_Frame3[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/sand_water_edge/3.4bpp");
+const u16 gTilesetAnims_GeneralRS_SandWaterEdge_Frame4[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/sand_water_edge/4.4bpp");
+const u16 gTilesetAnims_GeneralRS_SandWaterEdge_Frame5[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/sand_water_edge/5.4bpp");
+const u16 gTilesetAnims_GeneralRS_SandWaterEdge_Frame6[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/sand_water_edge/6.4bpp");
+
+const u16 *const gTilesetAnims_GeneralRS_SandWaterEdge[] = {
+    gTilesetAnims_GeneralRS_SandWaterEdge_Frame0,
+    gTilesetAnims_GeneralRS_SandWaterEdge_Frame1,
+    gTilesetAnims_GeneralRS_SandWaterEdge_Frame2,
+    gTilesetAnims_GeneralRS_SandWaterEdge_Frame3,
+    gTilesetAnims_GeneralRS_SandWaterEdge_Frame4,
+    gTilesetAnims_GeneralRS_SandWaterEdge_Frame5,
+    gTilesetAnims_GeneralRS_SandWaterEdge_Frame6,
+    gTilesetAnims_GeneralRS_SandWaterEdge_Frame0
+};
+
+const u16 gTilesetAnims_GeneralRS_Waterfall_Frame0[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/waterfall/0.4bpp");
+const u16 gTilesetAnims_GeneralRS_Waterfall_Frame1[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/waterfall/1.4bpp");
+const u16 gTilesetAnims_GeneralRS_Waterfall_Frame2[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/waterfall/2.4bpp");
+const u16 gTilesetAnims_GeneralRS_Waterfall_Frame3[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/waterfall/3.4bpp");
+
+const u16 *const gTilesetAnims_GeneralRS_Waterfall[] = {
+    gTilesetAnims_GeneralRS_Waterfall_Frame0,
+    gTilesetAnims_GeneralRS_Waterfall_Frame1,
+    gTilesetAnims_GeneralRS_Waterfall_Frame2,
+    gTilesetAnims_GeneralRS_Waterfall_Frame3
+};
+
+const u16 gTilesetAnims_GeneralRS_LandWaterEdge_Frame0[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/land_water_edge/0.4bpp");
+const u16 gTilesetAnims_GeneralRS_LandWaterEdge_Frame1[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/land_water_edge/1.4bpp");
+const u16 gTilesetAnims_GeneralRS_LandWaterEdge_Frame2[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/land_water_edge/2.4bpp");
+const u16 gTilesetAnims_GeneralRS_LandWaterEdge_Frame3[] = INCBIN_U16("data/tilesets/primary/general_rs/anim/land_water_edge/3.4bpp");
+
+const u16 *const gTilesetAnims_GeneralRS_LandWaterEdge[] = {
+    gTilesetAnims_GeneralRS_LandWaterEdge_Frame0,
+    gTilesetAnims_GeneralRS_LandWaterEdge_Frame1,
+    gTilesetAnims_GeneralRS_LandWaterEdge_Frame2,
+    gTilesetAnims_GeneralRS_LandWaterEdge_Frame3
+};
+
+static void TilesetAnim_GeneralRS(u16 timer)
+{
+    if (timer % 16 == 0)
+        QueueAnimTiles_GeneralRS_Flower(timer / 16);
+    if (timer % 16 == 1)
+        QueueAnimTiles_GeneralRS_Water(timer / 16);
+    if (timer % 16 == 2)
+        QueueAnimTiles_GeneralRS_SandWaterEdge(timer / 16);
+    if (timer % 16 == 3)
+        QueueAnimTiles_GeneralRS_Waterfall(timer / 16);
+    if (timer % 16 == 4)
+        QueueAnimTiles_GeneralRS_LandWaterEdge(timer / 16);
+}
+
+static void QueueAnimTiles_GeneralRS_Flower(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_GeneralRS_Flower);
+    AppendTilesetAnimToBuffer(gTilesetAnims_GeneralRS_Flower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(508)), 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_GeneralRS_Water(u16 timer)
+{
+    u8 i = timer % ARRAY_COUNT(gTilesetAnims_GeneralRS_Water);
+    AppendTilesetAnimToBuffer(gTilesetAnims_GeneralRS_Water[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(432)), 30 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_GeneralRS_SandWaterEdge(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_GeneralRS_SandWaterEdge);
+    AppendTilesetAnimToBuffer(gTilesetAnims_GeneralRS_SandWaterEdge[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(464)), 10 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_GeneralRS_Waterfall(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_GeneralRS_Waterfall);
+    AppendTilesetAnimToBuffer(gTilesetAnims_GeneralRS_Waterfall[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(496)), 6 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_GeneralRS_LandWaterEdge(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_GeneralRS_LandWaterEdge);
+    AppendTilesetAnimToBuffer(gTilesetAnims_GeneralRS_LandWaterEdge[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(480)), 10 * TILE_SIZE_4BPP);
+}
+
+void InitTilesetAnim_RustboroRS(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
+    sSecondaryTilesetAnimCallback = TilesetAnim_RustboroRS;
+}
+
+static void TilesetAnim_RustboroRS(u16 timer)
+{
+    if (timer % 8 == 0)
+    {
+        QueueAnimTiles_RustboroRS_WindyWater(timer / 8, 0);
+        QueueAnimTiles_RustboroRS_Fountain(timer / 8);
+    }
+    if (timer % 8 == 1)
+        QueueAnimTiles_RustboroRS_WindyWater(timer / 8, 1);
+    if (timer % 8 == 2)
+        QueueAnimTiles_RustboroRS_WindyWater(timer / 8, 2);
+    if (timer % 8 == 3)
+        QueueAnimTiles_RustboroRS_WindyWater(timer / 8, 3);
+    if (timer % 8 == 4)
+        QueueAnimTiles_RustboroRS_WindyWater(timer / 8, 4);
+    if (timer % 8 == 5)
+        QueueAnimTiles_RustboroRS_WindyWater(timer / 8, 5);
+    if (timer % 8 == 6)
+        QueueAnimTiles_RustboroRS_WindyWater(timer / 8, 6);
+    if (timer % 8 == 7)
+        QueueAnimTiles_RustboroRS_WindyWater(timer / 8, 7);
+}
+
+const u16 gTilesetAnims_RustboroRS_WindyWater_Frame0[] = INCBIN_U16("data/tilesets/secondary/rustboro_rs/anim/windy_water/0.4bpp");
+const u16 gTilesetAnims_RustboroRS_WindyWater_Frame1[] = INCBIN_U16("data/tilesets/secondary/rustboro_rs/anim/windy_water/1.4bpp");
+const u16 gTilesetAnims_RustboroRS_WindyWater_Frame2[] = INCBIN_U16("data/tilesets/secondary/rustboro_rs/anim/windy_water/2.4bpp");
+const u16 gTilesetAnims_RustboroRS_WindyWater_Frame3[] = INCBIN_U16("data/tilesets/secondary/rustboro_rs/anim/windy_water/3.4bpp");
+const u16 gTilesetAnims_RustboroRS_WindyWater_Frame4[] = INCBIN_U16("data/tilesets/secondary/rustboro_rs/anim/windy_water/4.4bpp");
+const u16 gTilesetAnims_RustboroRS_WindyWater_Frame5[] = INCBIN_U16("data/tilesets/secondary/rustboro_rs/anim/windy_water/5.4bpp");
+const u16 gTilesetAnims_RustboroRS_WindyWater_Frame6[] = INCBIN_U16("data/tilesets/secondary/rustboro_rs/anim/windy_water/6.4bpp");
+const u16 gTilesetAnims_RustboroRS_WindyWater_Frame7[] = INCBIN_U16("data/tilesets/secondary/rustboro_rs/anim/windy_water/7.4bpp");
+
+u16 *const gTilesetAnims_RustboroRS_WindyWater_VDests[] = {
+    (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 128)),
+    (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 132)),
+    (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 136)),
+    (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 140)),
+    (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 144)),
+    (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 148)),
+    (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 152)),
+    (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 156))
+};
+
+const u16 *const gTilesetAnims_RustboroRS_WindyWater[] = {
+    gTilesetAnims_RustboroRS_WindyWater_Frame0,
+    gTilesetAnims_RustboroRS_WindyWater_Frame1,
+    gTilesetAnims_RustboroRS_WindyWater_Frame2,
+    gTilesetAnims_RustboroRS_WindyWater_Frame3,
+    gTilesetAnims_RustboroRS_WindyWater_Frame4,
+    gTilesetAnims_RustboroRS_WindyWater_Frame5,
+    gTilesetAnims_RustboroRS_WindyWater_Frame6,
+    gTilesetAnims_RustboroRS_WindyWater_Frame7
+};
+
+const u16 gTilesetAnims_RustboroRS_Fountain_Frame0[] = INCBIN_U16("data/tilesets/secondary/rustboro_rs/anim/fountain/0.4bpp");
+const u16 gTilesetAnims_RustboroRS_Fountain_Frame1[] = INCBIN_U16("data/tilesets/secondary/rustboro_rs/anim/fountain/1.4bpp");
+
+const u16 *const gTilesetAnims_RustboroRS_Fountain[] = {
+    gTilesetAnims_RustboroRS_Fountain_Frame0,
+    gTilesetAnims_RustboroRS_Fountain_Frame1
+};
+
+static void QueueAnimTiles_RustboroRS_WindyWater(u16 timer_div, u8 timer_mod)
+{
+    timer_div -= timer_mod;
+    timer_div %= ARRAY_COUNT(gTilesetAnims_RustboroRS_WindyWater);
+    if (gTilesetAnims_RustboroRS_WindyWater[timer_div])
+        AppendTilesetAnimToBuffer(gTilesetAnims_RustboroRS_WindyWater[timer_div], gTilesetAnims_RustboroRS_WindyWater_VDests[timer_mod], 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_RustboroRS_Fountain(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_RustboroRS_Fountain);
+    AppendTilesetAnimToBuffer(gTilesetAnims_RustboroRS_Fountain[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 448)), 4 * TILE_SIZE_4BPP);
 }

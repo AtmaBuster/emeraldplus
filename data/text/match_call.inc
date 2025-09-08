@@ -2952,3 +2952,11 @@ MatchCall_Text_MrStone11::
 	.string "I didn't recognize you right off!\p"
 	.string "Hm! You must come visit us at DEVON\n"
 	.string "sometime!$"
+
+MatchCall_Text_MrStoneBonus::
+	.string "MR. STONE: … … … … … …\n"
+	.string "{PLAYER}! I'm glad I caught you.\p"
+	.string "I have some things to give you.\n"
+	.string "Stop on by DEVON when you have\l"
+	.string "some time.\p"
+	.string "See you around!$"

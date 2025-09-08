@@ -5,12 +5,15 @@
 #include "malloc.h"
 #include "palette.h"
 #include "pokedex_area_region_map.h"
+#include "region_map.h"
 
 static EWRAM_DATA u8 *sPokedexAreaMapBgNum = NULL;
 
 static const u16 ALIGNED(4) sPokedexAreaMap_Pal[] = INCBIN_U16("graphics/pokedex/region_map.gbapal");
 static const u32 sPokedexAreaMap_Gfx[] = INCBIN_U32("graphics/pokedex/region_map.8bpp.lz");
+static const u32 sPokedexAreaMap_KJGfx[] = INCBIN_U32("graphics/pokedex/kj_region_map.8bpp.lz");
 static const u32 sPokedexAreaMap_Tilemap[] = INCBIN_U32("graphics/pokedex/region_map.bin.lz");
+static const u32 sPokedexAreaMap_KJTilemap[] = INCBIN_U32("graphics/pokedex/kj_region_map.bin.lz");
 static const u32 sPokedexAreaMapAffine_Gfx[] = INCBIN_U32("graphics/pokedex/region_map_affine.8bpp.lz");
 static const u32 sPokedexAreaMapAffine_Tilemap[] = INCBIN_U32("graphics/pokedex/region_map_affine.bin.lz");
 
@@ -24,8 +27,16 @@ void LoadPokedexAreaMapGfx(const struct PokedexAreaMapTemplate *template)
     if (mode == 0)
     {
         SetBgAttribute(template->bg, BG_ATTR_METRIC, 0);
-        DecompressAndCopyTileDataToVram(template->bg, sPokedexAreaMap_Gfx, 0, template->offset, 0);
-        tilemap = DecompressAndCopyTileDataToVram(template->bg, sPokedexAreaMap_Tilemap, 0, 0, 1);
+	if (GetPlayerRegion() == REGIONMAP_HOENN)
+	{
+            DecompressAndCopyTileDataToVram(template->bg, sPokedexAreaMap_Gfx, 0, template->offset, 0);
+            tilemap = DecompressAndCopyTileDataToVram(template->bg, sPokedexAreaMap_Tilemap, 0, 0, 1);
+	}
+	else
+	{
+            DecompressAndCopyTileDataToVram(template->bg, sPokedexAreaMap_KJGfx, 0, template->offset, 0);
+            tilemap = DecompressAndCopyTileDataToVram(template->bg, sPokedexAreaMap_KJTilemap, 0, 0, 1);
+	}
         AddValToTilemapBuffer(tilemap, template->offset, 32, 32, FALSE); // template->offset is always 0, so this does nothing.
     }
     else

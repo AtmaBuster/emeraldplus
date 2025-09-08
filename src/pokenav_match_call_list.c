@@ -352,6 +352,8 @@ const u8 *GetMatchCallMessageText(int index, bool8 *newRematchRequest)
 {
     struct Pokenav_MatchCallMenu *state = GetSubstructPtr(POKENAV_SUBSTRUCT_MATCH_CALL_MAIN);
     *newRematchRequest = FALSE;
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_ROUTE104_FESTA))
+        return gText_CallCantBeMadeHere;
     if (!Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType))
         return gText_CallCantBeMadeHere;
 

@@ -244,6 +244,9 @@
 #define OBJ_EVENT_GFX_LUGIA                      237
 #define OBJ_EVENT_GFX_HOOH                       238
 
+#define OBJ_EVENT_GFX_CELEBI                     230
+#define OBJ_EVENT_GFX_JIRACHI                    231
+
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //
 // Object event graphics ids are 1 byte in size (max value of 255), and the dynamic

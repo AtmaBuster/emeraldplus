@@ -6,6 +6,12 @@
 // Exported type declarations
 #define MAP_NAME_LENGTH 16
 
+enum {
+    REGIONMAP_HOENN,
+    REGIONMAP_KANTOJOHTO,
+    REGIONMAP_COUNT
+};
+
 enum
 {
     MAP_INPUT_NONE,
@@ -114,6 +120,7 @@ bool8 IsRegionMapZoomed(void);
 void TrySetPlayerIconBlink(void);
 void BlendRegionMap(u16 color, u32 coeff);
 void SetRegionMapDataForZoom(void);
+u8 GetPlayerRegion(void);
 
 extern const struct RegionMapLocation gRegionMapEntries[];
 

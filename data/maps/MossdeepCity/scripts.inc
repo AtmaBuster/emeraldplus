@@ -53,8 +53,65 @@ MossdeepCity_EventScript_Woman::
 	end
 
 MossdeepCity_EventScript_WhiteRock::
+//	goto_if_unset FLAG_UNUSED_0x90B, Mossdeep_DoRegularRock
+	goto_if_set FLAG_UNUSED_0x903, Mossdeep_DoRegularRock
+	lock
+	msgbox Mossdeep_SpecialRockText, MSGBOX_NPC
+	setvar VAR_0x8004, EASY_CHAT_TYPE_WHITE_ROCK
+	call Common_ShowEasyChatScreen
+	lock
+	goto_if_eq VAR_0x8004, 2, Mossdeep_CorrectPhrase
+Mossdeep_DoRegularRock:
 	msgbox MossdeepCity_Text_ItsAWhiteRock, MSGBOX_SIGN
 	end
+
+Mossdeep_CorrectPhrase:
+	msgbox Mossdeep_JirachiAppeared
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_JIRACHI
+	givemon SPECIES_JIRACHI, 5, ITEM_NONE
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Mossdeep_GotJirachi_Party
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Mossdeep_GotJirachi_PC
+	goto Common_EventScript_NoMoreRoomForPokemon
+	end
+
+Mossdeep_GotJirachi_Party:
+	call Mossdeep_JirachiFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Mossdeep_JirachiCleanup
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto Mossdeep_JirachiCleanup
+	end
+
+Mossdeep_GotJirachi_PC:
+	call Mossdeep_JirachiFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Mossdeep_SendJirachiPC
+	call Common_EventScript_NameReceivedBoxMon
+Mossdeep_SendJirachiPC:
+	call Common_EventScript_TransferredToPC
+Mossdeep_JirachiCleanup:
+	setflag FLAG_UNUSED_0x903
+	release
+	end
+
+Mossdeep_JirachiFanfare:
+	playfanfare MUS_OBTAIN_ITEM
+	message Mossdeep_GotJirachi
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_JIRACHI
+	return
+
+Mossdeep_JirachiAppeared:
+	.string "{PLAYER}'s wish came true!\n"
+	.string "JIRACHI appeared!$"
+
+Mossdeep_GotJirachi:
+	.string "{PLAYER} received JIRACHI!$"
+
+Mossdeep_SpecialRockText:
+	.string "{PLAYER} makes a wish…$"
 
 MossdeepCity_EventScript_GymSign::
 	msgbox MossdeepCity_Text_GymSign, MSGBOX_SIGN
@@ -426,3 +483,10 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "People tell me the new LEADER once\n"
 	.string "mentored WALLACE.$"
 
+Mossdeep_MrStoneCall::
+	lockall
+	pokenavcall MatchCall_Text_MrStoneBonus
+	waitmessage
+	releaseall
+	setflag FLAG_UNUSED_0x901
+	end

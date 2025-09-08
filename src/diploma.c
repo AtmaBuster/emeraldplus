@@ -14,6 +14,7 @@
 #include "overworld.h"
 #include "menu.h"
 #include "pokedex.h"
+#include "event_data.h"
 #include "constants/rgb.h"
 
 extern const u8 gText_DexNational[];
@@ -131,6 +132,7 @@ static void DisplayDiplomaText(void)
     {
         SetGpuReg(REG_OFFSET_BG1HOFS, DISPLAY_WIDTH + 16);
         StringCopy(gStringVar1, gText_DexNational);
+	FlagSet(FLAG_UNUSED_0x912);
     }
     else
     {

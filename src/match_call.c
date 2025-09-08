@@ -1079,6 +1079,9 @@ static bool32 MapAllowsMatchCall(void)
      && FlagGet(FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY) == FALSE)
         return FALSE;
 
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_ROUTE104_FESTA))
+    	return FALSE;
+
     return TRUE;
 }
 

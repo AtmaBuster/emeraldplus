@@ -1,5 +1,19 @@
 PetalburgWoods_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, PetalburgWoods_OnTransition
 	.byte 0
+
+PetalburgWoods_OnTransition::
+	call_if_unset FLAG_UNUSED_0x90C, PetalburgWoods_EventScript_HideCelebi
+	call_if_set FLAG_UNUSED_0x90C, PetalburgWoods_EventScript_ShowCelebi
+	end
+
+PetalburgWoods_EventScript_HideCelebi::
+	setflag FLAG_UNUSED_0x900
+	return
+
+PetalburgWoods_EventScript_ShowCelebi::
+	clearflag FLAG_UNUSED_0x900
+	return
 
 PetalburgWoods_EventScript_DevonResearcherLeft::
 	lockall
@@ -471,3 +485,22 @@ PetalburgWoods_Text_TrainerTipsPP:
 	.string "If a POKéMON runs out of PP, it must be\n"
 	.string "taken to a POKéMON CENTER.$"
 
+PetalburgWoods_EventScript_Celebi::
+	lock
+	playmoncry SPECIES_CELEBI, CRY_MODE_ENCOUNTER
+	waitmoncry
+	delay 10
+	clearflag FLAG_UNUSED_0x905
+	clearflag FLAG_UNUSED_0x906
+	clearflag FLAG_UNUSED_0x907
+	clearflag FLAG_UNUSED_0x908
+	clearflag FLAG_UNUSED_0x909
+	clearflag FLAG_UNUSED_0x90A
+	clearflag FLAG_UNUSED_0x90E
+	clearflag FLAG_UNUSED_0x90F
+	clearflag FLAG_UNUSED_0x910
+	clearflag FLAG_UNUSED_0x911
+	warpteleport MAP_PETALBURG_WOODS_PROTO, 2
+	waitstate
+	release
+	end
