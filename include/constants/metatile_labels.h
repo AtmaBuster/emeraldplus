@@ -268,7 +268,9 @@
 #define METATILE_Johto1_LargePMCDoor  0x2F2
 
 // gTileset_Kanto1
-#define METATILE_Kanto1_LargePMCDoor  0x27A
+#define METATILE_Kanto1_LargePMCDoor    0x27A
+#define METATILE_Kanto1_OaksLabDoor     0x223
+#define METATILE_Kanto1_PalletTownDoor  0x21F
 
 // gTileset_Lavaridge
 #define METATILE_Lavaridge_AshGrass             0x207

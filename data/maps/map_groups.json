@@ -656,7 +656,8 @@
     "Route25",
     "OpenOcean",
     "Underwater_Route21",
-    "Underwater_OpenOcean"
+    "Underwater_OpenOcean",
+    "Underwater_OpenOcean_2"
   ],
   "gMapGroup_KantoIndoor": [
     "VermilionCity_PokemonCenter_1F",
@@ -687,6 +688,7 @@
     "Route35",
     "Route36",
     "Route37",
+    "Route38",
     "Route45",
     "Route46",
     "NationalPark",

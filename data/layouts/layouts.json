@@ -4594,7 +4594,7 @@
     {
       "id": "LAYOUT_CINNABAR_ISLAND",
       "name": "CinnabarIsland_Layout",
-      "width": 37,
+      "width": 38,
       "height": 21,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Kanto1",
@@ -4695,7 +4695,7 @@
       "id": "LAYOUT_ECRUTEAK_CITY",
       "name": "EcruteakCity_Layout",
       "width": 66,
-      "height": 48,
+      "height": 50,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Johto1",
       "border_filepath": "data/layouts/EcruteakCity/border.bin",
@@ -4984,8 +4984,8 @@
     {
       "id": "LAYOUT_UNDERWATER_ROUTE21",
       "name": "Underwater_Route21_Layout",
-      "width": 26,
-      "height": 100,
+      "width": 1,
+      "height": 1,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/Underwater_Route21/border.bin",
@@ -5020,6 +5020,36 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/Underwater_OpenOcean/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_OpenOcean/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE38",
+      "name": "Route38_Layout",
+      "width": 52,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Johto1",
+      "border_filepath": "data/layouts/Route38/border.bin",
+      "blockdata_filepath": "data/layouts/Route38/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERWATER_OPEN_OCEAN_2",
+      "name": "Underwater_OpenOcean_2_Layout",
+      "width": 88,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/Underwater_OpenOcean_2/border.bin",
+      "blockdata_filepath": "data/layouts/Underwater_OpenOcean_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERWATER_OPEN_OCEAN_2_BLOCKED_LAYOUT",
+      "name": "Underwater_OpenOcean_2_Blocked_Layout",
+      "width": 88,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/Underwater_OpenOcean_2_Blocked_Layout/border.bin",
+      "blockdata_filepath": "data/layouts/Underwater_OpenOcean_2_Blocked_Layout/map.bin"
     }
   ]
 }

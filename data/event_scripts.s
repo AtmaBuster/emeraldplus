@@ -1183,3 +1183,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/OpenOcean/scripts.inc"
 
 	.include "data/maps/Underwater_OpenOcean/scripts.inc"
+
+	.include "data/maps/Route38/scripts.inc"
+
+	.include "data/maps/Underwater_OpenOcean_2/scripts.inc"

@@ -183,14 +183,14 @@
     {
       "id": "HEAL_LOCATION_CINNABAR_ISLAND",
       "map": "MAP_CINNABAR_ISLAND",
-      "x": 15,
+      "x": 16,
       "y": 12
     },
     {
       "id": "HEAL_LOCATION_ECRUTEAK_CITY",
       "map": "MAP_ECRUTEAK_CITY",
       "x": 39,
-      "y": 41
+      "y": 43
     },
     {
       "id": "HEAL_LOCATION_GOLDENROD_CITY",

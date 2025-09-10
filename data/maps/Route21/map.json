@@ -20,18 +20,13 @@
     },
     {
       "map": "MAP_CINNABAR_ISLAND",
-      "offset": 1,
+      "offset": 0,
       "direction": "down"
     },
     {
       "map": "MAP_OPEN_OCEAN",
       "offset": 34,
       "direction": "left"
-    },
-    {
-      "map": "MAP_UNDERWATER_ROUTE21",
-      "offset": 0,
-      "direction": "dive"
     }
   ],
   "object_events": [],

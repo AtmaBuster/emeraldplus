@@ -24,9 +24,9 @@
       "direction": "emerge"
     },
     {
-      "map": "MAP_UNDERWATER_ROUTE21",
-      "offset": -34,
-      "direction": "right"
+      "map": "MAP_UNDERWATER_OPEN_OCEAN_2",
+      "offset": 0,
+      "direction": "dive"
     }
   ],
   "object_events": [],
