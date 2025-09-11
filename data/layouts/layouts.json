@@ -4587,7 +4587,7 @@
       "width": 48,
       "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Kanto1",
+      "secondary_tileset": "gTileset_Kanto2",
       "border_filepath": "data/layouts/ViridianCity/border.bin",
       "blockdata_filepath": "data/layouts/ViridianCity/map.bin"
     },
@@ -4627,7 +4627,7 @@
       "width": 48,
       "height": 24,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Kanto1",
+      "secondary_tileset": "gTileset_Kanto2",
       "border_filepath": "data/layouts/Route22/border.bin",
       "blockdata_filepath": "data/layouts/Route22/map.bin"
     },

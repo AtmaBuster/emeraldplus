@@ -220,6 +220,7 @@ static const u8 sDoorAnimPalettes_BattleDomePreBattleRoom[] = {9, 9, 7, 7, 7, 7,
 static const u8 sDoorAnimPalettes_BattleTentInterior[] = {9, 9, 9, 9, 9, 9, 9, 9};
 static const u8 sDoorAnimPalettes_TrainerHillLobbyElevator[] = {7, 7, 7, 7, 7, 7, 7, 7};
 static const u8 sDoorAnimPalettes_TrainerHillRoofElevator[] = {9, 9, 7, 7, 7, 7, 7, 7};
+//static const u8 sDoorAnimPalettes_KantoPalletDoor1[] = {8, 8, 
 
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
@@ -280,6 +281,9 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_TrainerHill_Door_Elevator_Roof,               DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_TrainerHillRoofElevator, sDoorAnimPalettes_TrainerHillRoofElevator},
     {METATILE_Kanto1_LargePMCDoor,                          DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_PokeCenterLarge, sDoorAnimPalettes_PokeCenter},
     {METATILE_Johto1_LargePMCDoor,                          DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_PokeCenterLarge, sDoorAnimPalettes_PokeCenter},
+    {METATILE_Kanto1_PalletTownDoor,                        DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Littleroot, sDoorAnimPalettes_FallarborLightRoof},
+    {METATILE_Kanto1_OaksLabDoor,                           DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_BirchsLab, sDoorAnimPalettes_SootopolisPeakedRoof},
+    {METATILE_Kanto2_ViridianDoor,                          DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Verdanturf, sDoorAnimPalettes_Verdanturf},
     {},
 };
 
