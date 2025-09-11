@@ -4914,7 +4914,7 @@
     {
       "id": "LAYOUT_ROUTE5",
       "name": "Route5_Layout",
-      "width": 32,
+      "width": 46,
       "height": 36,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Kanto1",
@@ -4935,7 +4935,7 @@
       "id": "LAYOUT_CERULEAN_CITY",
       "name": "CeruleanCity_Layout",
       "width": 48,
-      "height": 40,
+      "height": 44,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Kanto1",
       "border_filepath": "data/layouts/CeruleanCity/border.bin",
@@ -5050,6 +5050,16 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/Underwater_OpenOcean_2_Blocked_Layout/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_OpenOcean_2_Blocked_Layout/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFFRON_CITY_GATE_HOUSES",
+      "name": "SaffronCityGateHouses_Layout",
+      "width": 10,
+      "height": 51,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/SaffronCityGateHouses/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCityGateHouses/map.bin"
     }
   ]
 }

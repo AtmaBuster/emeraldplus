@@ -41,28 +41,28 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 5,
+      "x": 4,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2",
       "dest_warp_id": "4"
     },
     {
-      "x": 6,
+      "x": 5,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2",
       "dest_warp_id": "5"
     },
     {
-      "x": 5,
+      "x": 6,
       "y": 51,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2",
       "dest_warp_id": "2"
     },
     {
-      "x": 6,
+      "x": 7,
       "y": 51,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2",
@@ -70,14 +70,14 @@
     },
     {
       "x": 18,
-      "y": 41,
+      "y": 40,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2",
       "dest_warp_id": "8"
     },
     {
       "x": 19,
-      "y": 41,
+      "y": 40,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2",
       "dest_warp_id": "9"

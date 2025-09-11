@@ -20,86 +20,58 @@
     },
     {
       "map": "MAP_ROUTE5",
-      "offset": 8,
+      "offset": 2,
       "direction": "down"
     },
     {
       "map": "MAP_ROUTE4",
-      "offset": 10,
+      "offset": 12,
       "direction": "left"
     }
   ],
   "object_events": [],
   "warp_events": [
     {
-      "x": 22,
-      "y": 19,
+      "x": 23,
+      "y": 25,
       "elevation": 0,
       "dest_map": "MAP_CERULEAN_CITY",
       "dest_warp_id": "0"
     },
     {
-      "x": 28,
-      "y": 28,
+      "x": 27,
+      "y": 33,
       "elevation": 0,
       "dest_map": "MAP_CERULEAN_CITY",
       "dest_warp_id": "1"
     },
     {
-      "x": 31,
-      "y": 21,
+      "x": 32,
+      "y": 27,
       "elevation": 0,
       "dest_map": "MAP_CERULEAN_CITY",
       "dest_warp_id": "2"
     },
     {
-      "x": 10,
-      "y": 11,
-      "elevation": 0,
-      "dest_map": "MAP_CERULEAN_CITY",
-      "dest_warp_id": "4"
-    },
-    {
-      "x": 10,
-      "y": 8,
+      "x": 11,
+      "y": 17,
       "elevation": 0,
       "dest_map": "MAP_CERULEAN_CITY",
       "dest_warp_id": "3"
     },
     {
-      "x": 30,
-      "y": 11,
+      "x": 17,
+      "y": 23,
       "elevation": 0,
       "dest_map": "MAP_CERULEAN_CITY",
-      "dest_warp_id": "6"
+      "dest_warp_id": "4"
     },
     {
-      "x": 31,
-      "y": 8,
+      "x": 30,
+      "y": 18,
       "elevation": 0,
       "dest_map": "MAP_CERULEAN_CITY",
       "dest_warp_id": "5"
-    },
-    {
-      "x": 17,
-      "y": 11,
-      "elevation": 0,
-      "dest_map": "MAP_CERULEAN_CITY",
-      "dest_warp_id": "7"
-    },
-    {
-      "x": 15,
-      "y": 17,
-      "elevation": 0,
-      "dest_map": "MAP_CERULEAN_CITY",
-      "dest_warp_id": "8"
-    },
-    {
-      "x": 23,
-      "y": 28,
-      "elevation": 0,
-      "dest_map": "MAP_CERULEAN_CITY",
-      "dest_warp_id": "9"
     }
   ],
   "coord_events": [],

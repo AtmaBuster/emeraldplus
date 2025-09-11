@@ -661,7 +661,8 @@
   ],
   "gMapGroup_KantoIndoor": [
     "VermilionCity_PokemonCenter_1F",
-    "VermilionCity_PokemonCenter_2F"
+    "VermilionCity_PokemonCenter_2F",
+    "SaffronCityGateHouses"
   ],
   "gMapGroup_KantoDungeons": [
     "DiglettsCaveEntrance",

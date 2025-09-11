@@ -15891,7 +15891,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DODRIO"
+                "species": "SPECIES_DODUO"
               },
               {
                 "min_level": 5,
@@ -15911,7 +15911,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SNEASEL"
+                "species": "SPECIES_DODRIO"
               },
               {
                 "min_level": 5,
@@ -15921,7 +15921,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SNEASEL"
+                "species": "SPECIES_DODRIO"
               },
               {
                 "min_level": 5,
@@ -16204,7 +16204,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TANGELA"
+                "species": "SPECIES_DODUO"
               },
               {
                 "min_level": 5,

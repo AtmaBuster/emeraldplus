@@ -30,15 +30,15 @@
       "x": 12,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": "2"
+      "dest_map": "MAP_SAFFRON_CITY_GATE_HOUSES",
+      "dest_warp_id": "10"
     },
     {
       "x": 13,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": "3"
+      "dest_map": "MAP_SAFFRON_CITY_GATE_HOUSES",
+      "dest_warp_id": "11"
     }
   ],
   "coord_events": [],

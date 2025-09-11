@@ -15,30 +15,37 @@
   "connections": [
     {
       "map": "MAP_CERULEAN_CITY",
-      "offset": -8,
+      "offset": -2,
       "direction": "up"
     },
     {
       "map": "MAP_SAFFRON_CITY",
-      "offset": -18,
+      "offset": -12,
       "direction": "down"
     }
   ],
   "object_events": [],
   "warp_events": [
     {
-      "x": 16,
+      "x": 22,
       "y": 32,
       "elevation": 0,
-      "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_SAFFRON_CITY_GATE_HOUSES",
+      "dest_warp_id": "80"
     },
     {
-      "x": 17,
+      "x": 23,
       "y": 32,
       "elevation": 0,
-      "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_SAFFRON_CITY_GATE_HOUSES",
+      "dest_warp_id": "9"
+    },
+    {
+      "x": 21,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE5",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [],
