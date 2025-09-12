@@ -27,10 +27,10 @@
   "object_events": [],
   "warp_events": [
     {
-      "x": 12,
+      "x": 11,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE4",
+      "dest_map": "MAP_ROUTE4_POKEMON_CENTER_1F",
       "dest_warp_id": "0"
     },
     {

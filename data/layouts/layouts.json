@@ -4545,9 +4545,9 @@
       "id": "LAYOUT_PEWTER_CITY",
       "name": "PewterCity_Layout",
       "width": 48,
-      "height": 40,
+      "height": 46,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Kanto1",
+      "secondary_tileset": "gTileset_Kanto2",
       "border_filepath": "data/layouts/PewterCity/border.bin",
       "blockdata_filepath": "data/layouts/PewterCity/map.bin"
     },
@@ -4557,7 +4557,7 @@
       "width": 84,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Kanto1",
+      "secondary_tileset": "gTileset_Kanto2",
       "border_filepath": "data/layouts/Route3/border.bin",
       "blockdata_filepath": "data/layouts/Route3/map.bin"
     },
@@ -4567,7 +4567,7 @@
       "width": 108,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Kanto1",
+      "secondary_tileset": "gTileset_Kanto2",
       "border_filepath": "data/layouts/Route4/border.bin",
       "blockdata_filepath": "data/layouts/Route4/map.bin"
     },
@@ -4927,7 +4927,7 @@
       "width": 24,
       "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Kanto1",
+      "secondary_tileset": "gTileset_Kanto2",
       "border_filepath": "data/layouts/Route24/border.bin",
       "blockdata_filepath": "data/layouts/Route24/map.bin"
     },
@@ -4937,7 +4937,7 @@
       "width": 48,
       "height": 44,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Kanto1",
+      "secondary_tileset": "gTileset_Kanto2",
       "border_filepath": "data/layouts/CeruleanCity/border.bin",
       "blockdata_filepath": "data/layouts/CeruleanCity/map.bin"
     },
@@ -5060,6 +5060,26 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/SaffronCityGateHouses/border.bin",
       "blockdata_filepath": "data/layouts/SaffronCityGateHouses/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE11_GATE_HOUSE",
+      "name": "Route11_GateHouse_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/Route11_GateHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Route11_GateHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_GOLDENROD_CITY_POKEMON_CENTER_1F",
+      "name": "GoldenrodCity_PokemonCenter_1F_Layout",
+      "width": 32,
+      "height": 16,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/GoldenrodCity_PokemonCenter_1F/border.bin",
+      "blockdata_filepath": "data/layouts/GoldenrodCity_PokemonCenter_1F/map.bin"
     }
   ]
 }

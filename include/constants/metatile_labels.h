@@ -268,11 +268,15 @@
 #define METATILE_Johto1_LargePMCDoor  0x2F2
 
 // gTileset_Kanto1
-#define METATILE_Kanto1_LargePMCDoor    0x27A
-#define METATILE_Kanto1_OaksLabDoor     0x223
-#define METATILE_Kanto1_PalletTownDoor  0x204
+#define METATILE_Kanto1_LargePMCDoor          0x27A
+#define METATILE_Kanto1_OaksLabDoor           0x223
+#define METATILE_Kanto1_PalletTownDoor        0x204
+#define METATILE_Kanto1_VermilionDoor         0x366
+#define METATILE_Kanto1_VermilionFanClubDoor  0x369
 
 // gTileset_Kanto2
+#define METATILE_Kanto2_CeruleanDoor  0x27C
+#define METATILE_Kanto2_PewterDoor    0x299
 #define METATILE_Kanto2_ViridianDoor  0x22A
 
 // gTileset_Lavaridge

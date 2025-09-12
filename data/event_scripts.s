@@ -1189,3 +1189,61 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Underwater_OpenOcean_2/scripts.inc"
 
 	.include "data/maps/SaffronCityGateHouses/scripts.inc"
+
+	.include "data/maps/Route11_GateHouse/scripts.inc"
+
+	.include "data/maps/ViridianCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/ViridianCity_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/PewterCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/PewterCity_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/CeruleanCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/CeruleanCity_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/SaffronCity_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/SaffronCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/Route4_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/Route4_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/CinnabarIsland_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/CinnabarIsland_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/VioletCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/VioletCity_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/CherrygroveCity_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/CherrygroveCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/AzaleaTown_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/AzaleaTown_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/GoldenrodCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/GoldenrodCity_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/EcruteakCity_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/Route32_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/BlackthornCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/MtSilver_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/MtSilver_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/Route32_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/BlackthornCity_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/EcruteakCity_PokemonCenter_1F/scripts.inc"

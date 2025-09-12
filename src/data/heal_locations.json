@@ -135,19 +135,19 @@
     {
       "id": "HEAL_LOCATION_VERMILION_CITY",
       "map": "MAP_VERMILION_CITY",
-      "x": 15,
+      "x": 14,
       "y": 7
     },
     {
       "id": "HEAL_LOCATION_PEWTER_CITY",
       "map": "MAP_PEWTER_CITY",
-      "x": 17,
-      "y": 26
+      "x": 22,
+      "y": 34
     },
     {
       "id": "HEAL_LOCATION_ROUTE4",
       "map": "MAP_ROUTE4",
-      "x": 12,
+      "x": 11,
       "y": 6
     },
     {
@@ -213,7 +213,7 @@
     {
       "id": "HEAL_LOCATION_SAFFRON_CITY",
       "map": "MAP_SAFFRON_CITY",
-      "x": 24,
+      "x": 23,
       "y": 37
     },
     {

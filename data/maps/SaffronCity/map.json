@@ -55,11 +55,11 @@
       "dest_warp_id": "7"
     },
     {
-      "x": 24,
+      "x": 23,
       "y": 36,
       "elevation": 0,
-      "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": "4"
+      "dest_map": "MAP_SAFFRON_CITY_POKEMON_CENTER_1F",
+      "dest_warp_id": "0"
     },
     {
       "x": 20,

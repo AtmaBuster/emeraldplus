@@ -27,6 +27,20 @@
       "elevation": 0,
       "dest_map": "MAP_DIGLETTS_CAVE_ENTRANCE",
       "dest_warp_id": "2"
+    },
+    {
+      "x": 58,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE11_GATE_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 58,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE11_GATE_HOUSE",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [],

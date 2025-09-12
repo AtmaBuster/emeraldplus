@@ -660,9 +660,22 @@
     "Underwater_OpenOcean_2"
   ],
   "gMapGroup_KantoIndoor": [
+    "ViridianCity_PokemonCenter_1F",
+    "ViridianCity_PokemonCenter_2F",
+    "PewterCity_PokemonCenter_1F",
+    "PewterCity_PokemonCenter_2F",
+    "CeruleanCity_PokemonCenter_1F",
+    "CeruleanCity_PokemonCenter_2F",
     "VermilionCity_PokemonCenter_1F",
     "VermilionCity_PokemonCenter_2F",
-    "SaffronCityGateHouses"
+    "CinnabarIsland_PokemonCenter_1F",
+    "CinnabarIsland_PokemonCenter_2F",
+    "SaffronCity_PokemonCenter_1F",
+    "SaffronCity_PokemonCenter_2F",
+    "Route4_PokemonCenter_1F",
+    "Route4_PokemonCenter_2F",
+    "SaffronCityGateHouses",
+    "Route11_GateHouse"
   ],
   "gMapGroup_KantoDungeons": [
     "DiglettsCaveEntrance",
@@ -697,7 +710,24 @@
     "Underwater_Route26",
     "Underwater_Route27"
   ],
-  "gMapGroup_JohtoIndoor": [],
+  "gMapGroup_JohtoIndoor": [
+    "CherrygroveCity_PokemonCenter_1F",
+    "CherrygroveCity_PokemonCenter_2F",
+    "VioletCity_PokemonCenter_1F",
+    "VioletCity_PokemonCenter_2F",
+    "AzaleaTown_PokemonCenter_1F",
+    "AzaleaTown_PokemonCenter_2F",
+    "GoldenrodCity_PokemonCenter_1F",
+    "GoldenrodCity_PokemonCenter_2F",
+    "EcruteakCity_PokemonCenter_1F",
+    "EcruteakCity_PokemonCenter_2F",
+    "BlackthornCity_PokemonCenter_1F",
+    "BlackthornCity_PokemonCenter_2F",
+    "MtSilver_PokemonCenter_1F",
+    "MtSilver_PokemonCenter_2F",
+    "Route32_PokemonCenter_1F",
+    "Route32_PokemonCenter_2F"
+  ],
   "gMapGroup_JohtoDungeons": [
     "TohjoFalls",
     "DarkCaveVioletEntrance",
