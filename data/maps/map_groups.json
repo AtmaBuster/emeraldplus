@@ -681,7 +681,8 @@
     "Route4_PokemonCenter_2F",
     "SaffronCityGateHouses",
     "Route11_GateHouse",
-    "Route2_GateHouses"
+    "Route2_GateHouses",
+    "PalletTownHouses"
   ],
   "gMapGroup_KantoDungeons": [
     "DiglettsCaveEntrance",

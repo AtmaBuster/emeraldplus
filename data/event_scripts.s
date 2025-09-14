@@ -1309,3 +1309,5 @@ Common_Text_CoordEvent::
 	.include "data/maps/IlexForest/scripts.inc"
 
 	.include "data/maps/IlexForestGateHouses/scripts.inc"
+
+	.include "data/maps/PalletTownHouses/scripts.inc"

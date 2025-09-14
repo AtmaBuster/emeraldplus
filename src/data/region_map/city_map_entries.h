@@ -110,4 +110,75 @@ static const struct CityMapEntry sPokenavCityMaps[NUM_CITY_MAPS] =
         .index = 1,
         .tilemap = gPokenavCityMap_EverGrande_1,
     },
+
+    {
+        .mapSecId = MAPSEC_PALLET_TOWN,
+	.index = 0,
+	.tilemap = gPokenavCityMap_Pallet_0,
+    },
+    {
+        .mapSecId = MAPSEC_VIRIDIAN_CITY,
+	.index = 0,
+	.tilemap = gPokenavCityMap_Viridian_0,
+    },
+    {
+        .mapSecId = MAPSEC_PEWTER_CITY,
+	.index = 0,
+	.tilemap = gPokenavCityMap_Pewter_0,
+    },
+    {
+        .mapSecId = MAPSEC_CERULEAN_CITY,
+	.index = 0,
+	.tilemap = gPokenavCityMap_Cerulean_0,
+    },
+    {
+        .mapSecId = MAPSEC_SAFFRON_CITY,
+	.index = 0,
+	.tilemap = gPokenavCityMap_Saffron_0,
+    },
+    {
+        .mapSecId = MAPSEC_VERMILION_CITY,
+	.index = 0,
+	.tilemap = gPokenavCityMap_Vermilion_0,
+    },
+    {
+        .mapSecId = MAPSEC_CINNABAR_ISLAND,
+	.index = 0,
+	.tilemap = gPokenavCityMap_Cinnabar_0,
+    },
+    {
+        .mapSecId = MAPSEC_NEW_BARK_TOWN,
+	.index = 0,
+	.tilemap = gPokenavCityMap_NewBark_0,
+    },
+    {
+        .mapSecId = MAPSEC_CHERRYGROVE_CITY,
+	.index = 0,
+	.tilemap = gPokenavCityMap_Cherrygrove_0,
+    },
+    {
+        .mapSecId = MAPSEC_VIOLET_CITY,
+	.index = 0,
+	.tilemap = gPokenavCityMap_Violet_0,
+    },
+    {
+        .mapSecId = MAPSEC_AZALEA_TOWN,
+	.index = 0,
+	.tilemap = gPokenavCityMap_Azalea_0,
+    },
+    {
+        .mapSecId = MAPSEC_GOLDENROD_CITY,
+	.index = 0,
+	.tilemap = gPokenavCityMap_Goldenrod_0,
+    },
+    {
+        .mapSecId = MAPSEC_ECRUTEAK_CITY,
+	.index = 0,
+	.tilemap = gPokenavCityMap_Ecruteak_0,
+    },
+    {
+        .mapSecId = MAPSEC_BLACKTHORN_CITY,
+	.index = 0,
+	.tilemap = gPokenavCityMap_Blackthorn_0,
+    },
 };
