@@ -15,19 +15,19 @@
   "connections": [
     {
       "map": "MAP_PEWTER_CITY",
-      "offset": -12,
+      "offset": -14,
       "direction": "up"
     },
     {
       "map": "MAP_VIRIDIAN_CITY",
-      "offset": -12,
+      "offset": -14,
       "direction": "down"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 11,
+      "x": 9,
       "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -40,7 +40,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 18,
+      "x": 16,
       "y": 26,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -53,7 +53,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 15,
+      "x": 13,
       "y": 62,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -66,7 +66,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 15,
+      "x": 13,
       "y": 69,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -80,74 +80,74 @@
   ],
   "warp_events": [
     {
-      "x": 17,
+      "x": 15,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_DIGLETTS_CAVE_ENTRANCE",
       "dest_warp_id": "0"
     },
     {
-      "x": 17,
+      "x": 15,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2",
       "dest_warp_id": "1"
     },
     {
+      "x": 2,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE2_GATE_HOUSES",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE2_GATE_HOUSES",
+      "dest_warp_id": "1"
+    },
+    {
       "x": 4,
-      "y": 13,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE2",
-      "dest_warp_id": "4"
-    },
-    {
-      "x": 5,
-      "y": 13,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE2",
-      "dest_warp_id": "5"
-    },
-    {
-      "x": 6,
       "y": 51,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE2",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 7,
-      "y": 51,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE2",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 18,
-      "y": 40,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE2",
-      "dest_warp_id": "8"
-    },
-    {
-      "x": 19,
-      "y": 40,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE2",
-      "dest_warp_id": "9"
-    },
-    {
-      "x": 18,
-      "y": 46,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE2",
+      "dest_map": "MAP_ROUTE2_GATE_HOUSES",
       "dest_warp_id": "6"
     },
     {
-      "x": 19,
+      "x": 5,
+      "y": 51,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE2_GATE_HOUSES",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 16,
+      "y": 40,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE2_GATE_HOUSES",
+      "dest_warp_id": "8"
+    },
+    {
+      "x": 17,
+      "y": 40,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE2_GATE_HOUSES",
+      "dest_warp_id": "9"
+    },
+    {
+      "x": 16,
       "y": 46,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE2",
-      "dest_warp_id": "7"
+      "dest_map": "MAP_ROUTE2_GATE_HOUSES",
+      "dest_warp_id": "10"
+    },
+    {
+      "x": 17,
+      "y": 46,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE2_GATE_HOUSES",
+      "dest_warp_id": "11"
     }
   ],
   "coord_events": [],

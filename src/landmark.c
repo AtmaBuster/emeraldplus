@@ -58,6 +58,17 @@ static const u8 LandmarkName_AlteringCave[] = _("ALTERING CAVE");
 static const u8 LandmarkName_DesertUnderpass[] = _("DESERT UNDERPASS");
 static const u8 LandmarkName_TrainerHill[] = _("TRAINER HILL");
 
+static const u8 LandmarkName_UnionCave[] = _("UNION CAVE");
+static const u8 LandmarkName_MrPokemonsHouse[] = _("MR. POKéMON'S HOUSE");
+static const u8 LandmarkName_TohjoFalls[] = _("TOHJO FALLS");
+static const u8 LandmarkName_Route26RestStop[] = _("REST STOP");
+static const u8 LandmarkName_WeekSiblingsHouse[] = _("WEEK SIBLING'S HOUSE");
+static const u8 LandmarkName_PokemonLeagueGate[] = _("POKéMON LEAGUE GATE");
+static const u8 LandmarkName_ViridianForest[] = _("VIRIDIAN FOREST");
+static const u8 LandmarkName_DiglettsCave[] = _("DIGLETT'S CAVE");
+static const u8 LandmarkName_MtMoon[] = _("MT. MOON");
+static const u8 LandmarkName_BillsSeaCottage[] = _("BILL'S SEA COTTAGE");
+
 static const struct Landmark Landmark_FlowerShop = {LandmarkName_FlowerShop, FLAG_LANDMARK_FLOWER_SHOP};
 static const struct Landmark Landmark_PetalburgWoods = {LandmarkName_PetalburgWoods, -1};
 static const struct Landmark Landmark_MrBrineysCottage = {LandmarkName_MrBrineysCottage, FLAG_LANDMARK_MR_BRINEY_HOUSE};
@@ -99,6 +110,18 @@ static const struct Landmark Landmark_MirageTower = {LandmarkName_MirageTower, F
 static const struct Landmark Landmark_AlteringCave = {LandmarkName_AlteringCave, FLAG_LANDMARK_ALTERING_CAVE};
 static const struct Landmark Landmark_DesertUnderpass = {LandmarkName_DesertUnderpass, FLAG_LANDMARK_DESERT_UNDERPASS};
 static const struct Landmark Landmark_TrainerHill = {LandmarkName_TrainerHill, FLAG_LANDMARK_TRAINER_HILL};
+
+static const struct Landmark Landmark_Route34Daycare = {LandmarkName_PokemonDayCare, FLAG_LANDMARK_JOHTO_DAYCARE};
+static const struct Landmark Landmark_UnionCave = {LandmarkName_UnionCave, -1};
+static const struct Landmark Landmark_MrPokemonsHouse = {LandmarkName_MrPokemonsHouse, FLAG_LANDMARK_MR_POKEMONS_HOUSE};
+static const struct Landmark Landmark_TohjoFalls = {LandmarkName_TohjoFalls, FLAG_LANDMARK_TOHJO_FALLS};
+static const struct Landmark Landmark_Route26RestStop = {LandmarkName_Route26RestStop, FLAG_LANDMARK_ROUTE_26_REST_STOP};
+static const struct Landmark Landmark_WeekSilbingsHouse = {LandmarkName_WeekSiblingsHouse, FLAG_LANDMARK_WEEK_SIBLING_HOUSE};
+static const struct Landmark Landmark_PokemonLeagueGate = {LandmarkName_PokemonLeagueGate, FLAG_LANDMARK_POKEMON_LEAGUE_GATE};
+static const struct Landmark Landmark_ViridianForest = {LandmarkName_ViridianForest, -1};
+static const struct Landmark Landmark_DiglettsCave = {LandmarkName_DiglettsCave, -1};
+static const struct Landmark Landmark_MtMoon = {LandmarkName_MtMoon, -1};
+static const struct Landmark Landmark_BillsSeaCottage = {LandmarkName_BillsSeaCottage, FLAG_LANDMARK_BILLS_SEA_COTTAGE};
 
 static const struct Landmark *const Landmarks_Route103_2[]  =
 {
@@ -336,6 +359,73 @@ static const struct Landmark *const Landmarks_MtChimney_2[]  =
     NULL,
 };
 
+static const struct Landmark *const Landmarks_Route34_1[] =
+{
+    &Landmark_Route34Daycare,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_UnionCave[] =
+{
+    &Landmark_UnionCave,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_Route30_0[] =
+{
+    &Landmark_MrPokemonsHouse,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_TohjoFalls[] =
+{
+    &Landmark_TohjoFalls,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_Route26_2[] =
+{
+    &Landmark_Route26RestStop,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_Route26_3[] =
+{
+    &Landmark_WeekSilbingsHouse,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_PokemonLeagueGate[] =
+{
+    &Landmark_PokemonLeagueGate,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_Route2_0[] =
+{
+    &Landmark_ViridianForest,
+    &Landmark_DiglettsCave,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_MtMoon[] =
+{
+    &Landmark_MtMoon,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_Route25_1[] =
+{
+    &Landmark_BillsSeaCottage,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_Route11_0[] =
+{
+    &Landmark_DiglettsCave,
+    NULL,
+};
+
 static const struct LandmarkList sLandmarkLists[] =
 {
     {MAPSEC_ROUTE_103, 2, Landmarks_Route103_2},
@@ -389,6 +479,23 @@ static const struct LandmarkList sLandmarkLists[] =
     {MAPSEC_ROUTE_134, 1, Landmarks_OceanCurrent},
     {MAPSEC_ROUTE_134, 2, Landmarks_Route134_2},
     {MAPSEC_MT_CHIMNEY, 2, Landmarks_MtChimney_2},
+
+    {MAPSEC_ROUTE_4_POKECENTER, 0, Landmarks_MtMoon},
+    {MAPSEC_ROUTE_2, 0, Landmarks_Route2_0},
+    {MAPSEC_ROUTE_4, 0, Landmarks_MtMoon},
+    {MAPSEC_ROUTE_11, 0, Landmarks_Route11_0},
+    {MAPSEC_ROUTE_22, 0, Landmarks_PokemonLeagueGate},
+    {MAPSEC_ROUTE_25, 1, Landmarks_Route25_1},
+    {MAPSEC_ROUTE_28, 1, Landmarks_PokemonLeagueGate},
+    {MAPSEC_ROUTE_34, 1, Landmarks_Route34_1},
+    {MAPSEC_ROUTE_33, 1, Landmarks_UnionCave},
+    {MAPSEC_ROUTE_30, 0, Landmarks_Route30_0},
+    {MAPSEC_ROUTE_26, 0, Landmarks_PokemonLeagueGate},
+    {MAPSEC_ROUTE_26, 2, Landmarks_Route26_2},
+    {MAPSEC_ROUTE_26, 3, Landmarks_Route26_3},
+    {MAPSEC_ROUTE_27, 0, Landmarks_TohjoFalls},
+    {MAPSEC_ROUTE_27, 1, Landmarks_TohjoFalls},
+
     {MAPSEC_NONE, 0, NULL},
 };
 

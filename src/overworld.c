@@ -678,6 +678,8 @@ void UpdateEscapeWarp(s16 x, s16 y)
 {
     u8 currMapType = GetCurrentMapType();
     u8 destMapType = GetMapTypeByGroupAndId(sWarpDestination.mapGroup, sWarpDestination.mapNum);
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_MT_MOON_SQUARE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_MT_MOON_SQUARE))
+        return;
     if (IsMapTypeOutdoors(currMapType) && IsMapTypeOutdoors(destMapType) != TRUE)
         SetEscapeWarp(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, WARP_ID_NONE, x - MAP_OFFSET, y - MAP_OFFSET + 1);
 }

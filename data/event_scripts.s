@@ -1002,6 +1002,32 @@ Common_EventScript_LegendaryFlewAway::
 	release
 	end
 
+Common_EventScript_ObjectEvent::
+	lock
+	faceplayer
+	msgbox Common_Text_ObjectEvent, MSGBOX_DEFAULT
+	release
+	end
+
+Common_EventScript_BGEvent::
+	lock
+	msgbox Common_Text_BGEvent, MSGBOX_DEFAULT
+	release
+	end
+
+Common_EventScript_CoordEvent::
+	lock
+	msgbox Common_Text_CoordEvent, MSGBOX_DEFAULT
+	release
+	end
+
+Common_Text_ObjectEvent::
+	.string "Object event$"
+Common_Text_BGEvent::
+	.string "BG event$"
+Common_Text_CoordEvent::
+	.string "Coord event$"
+
 	.include "data/scripts/pc_transfer.inc"
 	.include "data/scripts/questionnaire.inc"
 	.include "data/scripts/abnormal_weather.inc"
@@ -1247,3 +1273,39 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/BlackthornCity_PokemonCenter_2F/scripts.inc"
 
 	.include "data/maps/EcruteakCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/ViridianCity_Mart/scripts.inc"
+
+	.include "data/maps/SaffronCity_Mart/scripts.inc"
+
+	.include "data/maps/VioletCity_Mart/scripts.inc"
+
+	.include "data/maps/VermilionCity_Mart/scripts.inc"
+
+	.include "data/maps/CherrygroveCity_Mart/scripts.inc"
+
+	.include "data/maps/CeruleanCity_Mart/scripts.inc"
+
+	.include "data/maps/BlackthornCity_Mart/scripts.inc"
+
+	.include "data/maps/AzaleaTown_Mart/scripts.inc"
+
+	.include "data/maps/EcruteakCity_Mart/scripts.inc"
+
+	.include "data/maps/PewterCity_Mart/scripts.inc"
+
+	.include "data/maps/Route2_GateHouses/scripts.inc"
+
+	.include "data/maps/ViridianForest/scripts.inc"
+
+	.include "data/maps/MtMoon_1F/scripts.inc"
+
+	.include "data/maps/MtMoon_2F/scripts.inc"
+
+	.include "data/maps/MtMoon_3F/scripts.inc"
+
+	.include "data/maps/MtMoon_Square/scripts.inc"
+
+	.include "data/maps/IlexForest/scripts.inc"
+
+	.include "data/maps/IlexForestGateHouses/scripts.inc"

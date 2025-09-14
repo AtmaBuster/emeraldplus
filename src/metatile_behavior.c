@@ -126,6 +126,7 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_VERTICAL_RAIL]                   = TILE_FLAG_UNUSED,
     [MB_HORIZONTAL_RAIL]                 = TILE_FLAG_UNUSED,
     [MB_UNDERWATER_DIVEABLE]             = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
+    [MB_FOREST_ENCOUNTER]                = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
 };
 
 bool8 MetatileBehavior_IsATile(u8 metatileBehavior)
@@ -730,6 +731,14 @@ bool8 MetatileBehavior_IsPuddle(u8 metatileBehavior)
 bool8 MetatileBehavior_IsTallGrass(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_TALL_GRASS)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsForestEncounter(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_FOREST_ENCOUNTER)
         return TRUE;
     else
         return FALSE;

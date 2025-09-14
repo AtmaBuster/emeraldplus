@@ -20,14 +20,14 @@
     },
     {
       "map": "MAP_ROUTE32",
-      "offset": 20,
+      "offset": 14,
       "direction": "up"
     }
   ],
   "object_events": [],
   "warp_events": [
     {
-      "x": 26,
+      "x": 24,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_RUINS_OF_ALPH",

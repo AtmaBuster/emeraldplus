@@ -662,24 +662,35 @@
   "gMapGroup_KantoIndoor": [
     "ViridianCity_PokemonCenter_1F",
     "ViridianCity_PokemonCenter_2F",
+    "ViridianCity_Mart",
     "PewterCity_PokemonCenter_1F",
     "PewterCity_PokemonCenter_2F",
+    "PewterCity_Mart",
     "CeruleanCity_PokemonCenter_1F",
     "CeruleanCity_PokemonCenter_2F",
+    "CeruleanCity_Mart",
     "VermilionCity_PokemonCenter_1F",
     "VermilionCity_PokemonCenter_2F",
+    "VermilionCity_Mart",
     "CinnabarIsland_PokemonCenter_1F",
     "CinnabarIsland_PokemonCenter_2F",
     "SaffronCity_PokemonCenter_1F",
     "SaffronCity_PokemonCenter_2F",
+    "SaffronCity_Mart",
     "Route4_PokemonCenter_1F",
     "Route4_PokemonCenter_2F",
     "SaffronCityGateHouses",
-    "Route11_GateHouse"
+    "Route11_GateHouse",
+    "Route2_GateHouses"
   ],
   "gMapGroup_KantoDungeons": [
     "DiglettsCaveEntrance",
-    "DiglettsCave"
+    "DiglettsCave",
+    "ViridianForest",
+    "MtMoon_1F",
+    "MtMoon_2F",
+    "MtMoon_3F",
+    "MtMoon_Square"
   ],
   "gMapGroup_Johto": [
     "NewBarkTown",
@@ -713,25 +724,32 @@
   "gMapGroup_JohtoIndoor": [
     "CherrygroveCity_PokemonCenter_1F",
     "CherrygroveCity_PokemonCenter_2F",
+    "CherrygroveCity_Mart",
     "VioletCity_PokemonCenter_1F",
     "VioletCity_PokemonCenter_2F",
+    "VioletCity_Mart",
     "AzaleaTown_PokemonCenter_1F",
     "AzaleaTown_PokemonCenter_2F",
+    "AzaleaTown_Mart",
     "GoldenrodCity_PokemonCenter_1F",
     "GoldenrodCity_PokemonCenter_2F",
     "EcruteakCity_PokemonCenter_1F",
     "EcruteakCity_PokemonCenter_2F",
+    "EcruteakCity_Mart",
     "BlackthornCity_PokemonCenter_1F",
     "BlackthornCity_PokemonCenter_2F",
+    "BlackthornCity_Mart",
     "MtSilver_PokemonCenter_1F",
     "MtSilver_PokemonCenter_2F",
     "Route32_PokemonCenter_1F",
-    "Route32_PokemonCenter_2F"
+    "Route32_PokemonCenter_2F",
+    "IlexForestGateHouses"
   ],
   "gMapGroup_JohtoDungeons": [
     "TohjoFalls",
     "DarkCaveVioletEntrance",
     "DarkCaveBlackthornEntrance",
-    "RuinsOfAlphMainChamber"
+    "RuinsOfAlphMainChamber",
+    "IlexForest"
   ]
 }

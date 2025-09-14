@@ -2,7 +2,7 @@
   "id": "MAP_AZALEA_TOWN",
   "name": "AzaleaTown",
   "layout": "LAYOUT_AZALEA_TOWN",
-  "music": "MUS_RG_PEWTER",
+  "music": "MUS_RG_SEVII_45",
   "region_map_section": "MAPSEC_AZALEA_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -37,8 +37,8 @@
       "x": 27,
       "y": 4,
       "elevation": 0,
-      "dest_map": "MAP_AZALEA_TOWN",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_AZALEA_TOWN_MART",
+      "dest_warp_id": "0"
     },
     {
       "x": 15,
@@ -65,15 +65,15 @@
       "x": 4,
       "y": 10,
       "elevation": 0,
-      "dest_map": "MAP_AZALEA_TOWN",
-      "dest_warp_id": "5"
+      "dest_map": "MAP_ILEX_FOREST_GATE_HOUSES",
+      "dest_warp_id": "4"
     },
     {
       "x": 4,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE34",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_ILEX_FOREST_GATE_HOUSES",
+      "dest_warp_id": "5"
     },
     {
       "x": 40,
@@ -84,5 +84,38 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 21,
+      "y": 8,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Common_EventScript_ShowPokemonCenterSign"
+    },
+    {
+      "type": "sign",
+      "x": 22,
+      "y": 8,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Common_EventScript_ShowPokemonCenterSign"
+    },
+    {
+      "type": "sign",
+      "x": 28,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Common_EventScript_ShowPokemartSign"
+    },
+    {
+      "type": "sign",
+      "x": 29,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Common_EventScript_ShowPokemartSign"
+    }
+  ]
 }

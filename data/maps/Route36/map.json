@@ -25,7 +25,7 @@
     },
     {
       "map": "MAP_ROUTE37",
-      "offset": 12,
+      "offset": 16,
       "direction": "up"
     },
     {
@@ -35,7 +35,7 @@
     },
     {
       "map": "MAP_RUINS_OF_ALPH",
-      "offset": 26,
+      "offset": 32,
       "direction": "down"
     }
   ],

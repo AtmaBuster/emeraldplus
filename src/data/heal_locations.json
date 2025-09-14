@@ -153,7 +153,7 @@
     {
       "id": "HEAL_LOCATION_PALLET_TOWN",
       "map": "MAP_PALLET_TOWN",
-      "x": 6,
+      "x": 4,
       "y": 8
     },
     {
@@ -189,7 +189,7 @@
     {
       "id": "HEAL_LOCATION_ECRUTEAK_CITY",
       "map": "MAP_ECRUTEAK_CITY",
-      "x": 39,
+      "x": 35,
       "y": 43
     },
     {

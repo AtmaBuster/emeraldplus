@@ -28,17 +28,17 @@
   "warp_events": [
     {
       "x": 19,
-      "y": 40,
+      "y": 39,
       "elevation": 0,
-      "dest_map": "MAP_AZALEA_TOWN",
-      "dest_warp_id": "6"
+      "dest_map": "MAP_ILEX_FOREST_GATE_HOUSES",
+      "dest_warp_id": "0"
     },
     {
       "x": 20,
-      "y": 40,
+      "y": 39,
       "elevation": 0,
-      "dest_map": "MAP_AZALEA_TOWN",
-      "dest_warp_id": "5"
+      "dest_map": "MAP_ILEX_FOREST_GATE_HOUSES",
+      "dest_warp_id": "1"
     },
     {
       "x": 19,
