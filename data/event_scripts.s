@@ -1214,7 +1214,7 @@ Common_Text_CoordEvent::
 
 	.include "data/maps/Underwater_OpenOcean_2/scripts.inc"
 
-	.include "data/maps/SaffronCityGateHouses/scripts.inc"
+	.include "data/maps/SaffronCity_GateHouses/scripts.inc"
 
 	.include "data/maps/Route11_GateHouse/scripts.inc"
 
@@ -1310,4 +1310,8 @@ Common_Text_CoordEvent::
 
 	.include "data/maps/IlexForestGateHouses/scripts.inc"
 
-	.include "data/maps/PalletTownHouses/scripts.inc"
+	.include "data/maps/PalletTown_Houses/scripts.inc"
+
+	.include "data/maps/PalletTown_OaksLab/scripts.inc"
+
+	.include "data/maps/NewBarkTown_Houses/scripts.inc"

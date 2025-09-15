@@ -660,6 +660,8 @@
     "Underwater_OpenOcean_2"
   ],
   "gMapGroup_KantoIndoor": [
+    "PalletTown_Houses",
+    "PalletTown_OaksLab",
     "ViridianCity_PokemonCenter_1F",
     "ViridianCity_PokemonCenter_2F",
     "ViridianCity_Mart",
@@ -677,12 +679,11 @@
     "SaffronCity_PokemonCenter_1F",
     "SaffronCity_PokemonCenter_2F",
     "SaffronCity_Mart",
+    "SaffronCity_GateHouses",
+    "Route2_GateHouses",
     "Route4_PokemonCenter_1F",
     "Route4_PokemonCenter_2F",
-    "SaffronCityGateHouses",
-    "Route11_GateHouse",
-    "Route2_GateHouses",
-    "PalletTownHouses"
+    "Route11_GateHouse"
   ],
   "gMapGroup_KantoDungeons": [
     "DiglettsCaveEntrance",
@@ -723,6 +724,7 @@
     "Underwater_Route27"
   ],
   "gMapGroup_JohtoIndoor": [
+    "NewBarkTown_Houses",
     "CherrygroveCity_PokemonCenter_1F",
     "CherrygroveCity_PokemonCenter_2F",
     "CherrygroveCity_Mart",

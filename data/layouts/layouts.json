@@ -5053,13 +5053,13 @@
     },
     {
       "id": "LAYOUT_SAFFRON_CITY_GATE_HOUSES",
-      "name": "SaffronCityGateHouses_Layout",
+      "name": "SaffronCity_GateHouses_Layout",
       "width": 10,
       "height": 51,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/SaffronCityGateHouses/border.bin",
-      "blockdata_filepath": "data/layouts/SaffronCityGateHouses/map.bin"
+      "border_filepath": "data/layouts/SaffronCity_GateHouses/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCity_GateHouses/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE11_GATE_HOUSE",
@@ -5163,13 +5163,33 @@
     },
     {
       "id": "LAYOUT_PALLET_TOWN_HOUSES",
-      "name": "PalletTownHouses_Layout",
+      "name": "PalletTown_Houses_Layout",
       "width": 30,
       "height": 23,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/PalletTownHouses/border.bin",
-      "blockdata_filepath": "data/layouts/PalletTownHouses/map.bin"
+      "border_filepath": "data/layouts/PalletTown_Houses/border.bin",
+      "blockdata_filepath": "data/layouts/PalletTown_Houses/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALLET_TOWN_OAKS_LAB",
+      "name": "PalletTown_OaksLab_Layout",
+      "width": 12,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/PalletTown_OaksLab/border.bin",
+      "blockdata_filepath": "data/layouts/PalletTown_OaksLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_BARK_TOWN_HOUSES",
+      "name": "NewBarkTown_Houses_Layout",
+      "width": 30,
+      "height": 23,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/NewBarkTown_Houses/border.bin",
+      "blockdata_filepath": "data/layouts/NewBarkTown_Houses/map.bin"
     }
   ]
 }
