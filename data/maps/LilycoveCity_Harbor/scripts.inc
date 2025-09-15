@@ -42,11 +42,12 @@ LilycoveCity_Harbor_EventScript_FerryRegularLocationSelect::
 	switch VAR_RESULT
 	case 0, LilycoveCity_Harbor_EventScript_GoToSlateport
 	case 1, LilycoveCity_Harbor_EventScript_GoToBattleFrontier
-	case 2, LilycoveCity_Harbor_EventScript_GoToSouthernIsland
-	case 3, LilycoveCity_Harbor_EventScript_GoToNavelRock
-	case 4, LilycoveCity_Harbor_EventScript_GoToBirthIsland
-	case 5, LilycoveCity_Harbor_EventScript_GoToFarawayIsland
-	case 6, LilycoveCity_Harbor_EventScript_ExitSailSelect
+	case 2, LilycoveCity_Harbor_EventScript_GoToVermilionCity
+	case 3, LilycoveCity_Harbor_EventScript_GoToSouthernIsland
+	case 4, LilycoveCity_Harbor_EventScript_GoToNavelRock
+	case 5, LilycoveCity_Harbor_EventScript_GoToBirthIsland
+	case 6, LilycoveCity_Harbor_EventScript_GoToFarawayIsland
+	case 7, LilycoveCity_Harbor_EventScript_ExitSailSelect
 	case MULTI_B_PRESSED, LilycoveCity_Harbor_EventScript_ExitSailSelect
 	end
 
@@ -93,6 +94,15 @@ LilycoveCity_Harbor_EventScript_GoToBattleFrontier::
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_Harbor_EventScript_FerryDestinationChangeMind
 	call LilycoveCity_Harbor_EventScript_BoardFerry
 	warp MAP_BATTLE_FRONTIER_OUTSIDE_WEST, 19, 67
+	waitstate
+	release
+	end
+
+LilycoveCity_Harbor_EventScript_GoToVermilionCity::
+	msgbox LilycoveCity_Harbor_Text_VermilionItIs, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, LilycoveCity_Harbor_EventScript_FerryDestinationChangeMind
+	call LilycoveCity_Harbor_EventScript_BoardFerry
+	warp MAP_VERMILION_CITY, 37, 46
 	waitstate
 	release
 	end
@@ -565,6 +575,9 @@ LilycoveCity_Harbor_Text_SlateportItIs:
 
 LilycoveCity_Harbor_Text_BattleFrontierItIs:
 	.string "BATTLE FRONTIER it is, then!$"
+
+LilycoveCity_Harbor_Text_VermilionItIs:
+	.string "VERMILION CITY it is, then!$"
 
 LilycoveCity_Harbor_Text_PleaseBoard:
 	.string "Please board the ferry and wait for\n"

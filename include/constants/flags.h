@@ -1501,35 +1501,33 @@
 #define FLAG_ENABLE_SHIP_NAVEL_ROCK                 (SYSTEM_FLAGS + 0x80)
 #define FLAG_ARRIVED_AT_NAVEL_ROCK                  (SYSTEM_FLAGS + 0x81)
 #define FLAG_LANDMARK_TRAINER_HILL                  (SYSTEM_FLAGS + 0x82)
-
-#define FLAG_UNUSED_0x8E3                           (SYSTEM_FLAGS + 0x83) // Unused Flag
-
+#define FLAG_ENABLE_KANTO_SHIP                      (SYSTEM_FLAGS + 0x83)
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            (SYSTEM_FLAGS + 0x84)
 
-#define FLAG_VISITED_VERMILION_CITY                 (SYSTEM_FLAGS + 0x85) // Unused Flag
-#define FLAG_VISITED_SAFFRON_CITY                   (SYSTEM_FLAGS + 0x86) // Unused Flag
-#define FLAG_VISITED_PEWTER_CITY                    (SYSTEM_FLAGS + 0x87) // Unused Flag
-#define FLAG_VISITED_VIRIDIAN_CITY                  (SYSTEM_FLAGS + 0x88) // Unused Flag
-#define FLAG_VISITED_PALLET_TOWN                    (SYSTEM_FLAGS + 0x89) // Unused Flag
-#define FLAG_VISITED_CINNABAR_ISLAND                (SYSTEM_FLAGS + 0x8A) // Unused Flag
-#define FLAG_VISITED_GOLDENROD_CITY                 (SYSTEM_FLAGS + 0x8B) // Unused Flag
-#define FLAG_VISITED_VIOLET_CITY                    (SYSTEM_FLAGS + 0x8C) // Unused Flag
-#define FLAG_VISITED_AZALEA_TOWN                    (SYSTEM_FLAGS + 0x8D) // Unused Flag
-#define FLAG_VISITED_ECRUTEAK_CITY                  (SYSTEM_FLAGS + 0x8E) // Unused Flag
-#define FLAG_VISITED_CHERRYGROVE_CITY               (SYSTEM_FLAGS + 0x8F) // Unused Flag
-#define FLAG_VISITED_NEW_BARK_TOWN                  (SYSTEM_FLAGS + 0x90) // Unused Flag
-#define FLAG_VISITED_BLACKTHORN_CITY                (SYSTEM_FLAGS + 0x91) // Unused Flag
-#define FLAG_LANDMARK_ROUTE_4_POKECENTER            (SYSTEM_FLAGS + 0x92) // Unused Flag
-#define FLAG_LANDMARK_ROUTE_32_POKECENTER           (SYSTEM_FLAGS + 0x93) // Unused Flag
-#define FLAG_VISITED_CERULEAN_CITY                  (SYSTEM_FLAGS + 0x94) // Unused Flag
-#define FLAG_VISITED_MT_SILVER                      (SYSTEM_FLAGS + 0x95) // Unused Flag
-#define FLAG_LANDMARK_JOHTO_DAYCARE                 (SYSTEM_FLAGS + 0x96) // Unused Flag
-#define FLAG_LANDMARK_MR_POKEMONS_HOUSE             (SYSTEM_FLAGS + 0x97) // Unused Flag
-#define FLAG_LANDMARK_TOHJO_FALLS                   (SYSTEM_FLAGS + 0x98) // Unused Flag
-#define FLAG_LANDMARK_ROUTE_26_REST_STOP            (SYSTEM_FLAGS + 0x99) // Unused Flag
-#define FLAG_LANDMARK_WEEK_SIBLING_HOUSE            (SYSTEM_FLAGS + 0x9A) // Unused Flag
-#define FLAG_LANDMARK_POKEMON_LEAGUE_GATE           (SYSTEM_FLAGS + 0x9B) // Unused Flag
-#define FLAG_LANDMARK_BILLS_SEA_COTTAGE             (SYSTEM_FLAGS + 0x9C) // Unused Flag
+#define FLAG_VISITED_VERMILION_CITY                 (SYSTEM_FLAGS + 0x85)
+#define FLAG_VISITED_SAFFRON_CITY                   (SYSTEM_FLAGS + 0x86)
+#define FLAG_VISITED_PEWTER_CITY                    (SYSTEM_FLAGS + 0x87)
+#define FLAG_VISITED_VIRIDIAN_CITY                  (SYSTEM_FLAGS + 0x88)
+#define FLAG_VISITED_PALLET_TOWN                    (SYSTEM_FLAGS + 0x89)
+#define FLAG_VISITED_CINNABAR_ISLAND                (SYSTEM_FLAGS + 0x8A)
+#define FLAG_VISITED_GOLDENROD_CITY                 (SYSTEM_FLAGS + 0x8B)
+#define FLAG_VISITED_VIOLET_CITY                    (SYSTEM_FLAGS + 0x8C)
+#define FLAG_VISITED_AZALEA_TOWN                    (SYSTEM_FLAGS + 0x8D)
+#define FLAG_VISITED_ECRUTEAK_CITY                  (SYSTEM_FLAGS + 0x8E)
+#define FLAG_VISITED_CHERRYGROVE_CITY               (SYSTEM_FLAGS + 0x8F)
+#define FLAG_VISITED_NEW_BARK_TOWN                  (SYSTEM_FLAGS + 0x90)
+#define FLAG_VISITED_BLACKTHORN_CITY                (SYSTEM_FLAGS + 0x91)
+#define FLAG_LANDMARK_ROUTE_4_POKECENTER            (SYSTEM_FLAGS + 0x92)
+#define FLAG_LANDMARK_ROUTE_32_POKECENTER           (SYSTEM_FLAGS + 0x93)
+#define FLAG_VISITED_CERULEAN_CITY                  (SYSTEM_FLAGS + 0x94)
+#define FLAG_VISITED_MT_SILVER                      (SYSTEM_FLAGS + 0x95)
+#define FLAG_LANDMARK_JOHTO_DAYCARE                 (SYSTEM_FLAGS + 0x96)
+#define FLAG_LANDMARK_MR_POKEMONS_HOUSE             (SYSTEM_FLAGS + 0x97)
+#define FLAG_LANDMARK_TOHJO_FALLS                   (SYSTEM_FLAGS + 0x98)
+#define FLAG_LANDMARK_ROUTE_26_REST_STOP            (SYSTEM_FLAGS + 0x99)
+#define FLAG_LANDMARK_WEEK_SIBLING_HOUSE            (SYSTEM_FLAGS + 0x9A)
+#define FLAG_LANDMARK_POKEMON_LEAGUE_GATE           (SYSTEM_FLAGS + 0x9B)
+#define FLAG_LANDMARK_BILLS_SEA_COTTAGE             (SYSTEM_FLAGS + 0x9C)
 #define FLAG_UNUSED_0x8FD                           (SYSTEM_FLAGS + 0x9D) // Unused Flag
 #define FLAG_UNUSED_0x8FE                           (SYSTEM_FLAGS + 0x9E) // Unused Flag
 #define FLAG_UNUSED_0x8FF                           (SYSTEM_FLAGS + 0x9F) // Unused Flag

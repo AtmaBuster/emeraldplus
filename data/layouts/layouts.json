@@ -4495,7 +4495,7 @@
       "id": "LAYOUT_VERMILION_CITY",
       "name": "VermilionCity_Layout",
       "width": 48,
-      "height": 40,
+      "height": 58,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Kanto1",
       "border_filepath": "data/layouts/VermilionCity/border.bin",
@@ -4982,16 +4982,6 @@
       "blockdata_filepath": "data/layouts/RuinsOfAlphMainChamber/map.bin"
     },
     {
-      "id": "LAYOUT_UNDERWATER_ROUTE21",
-      "name": "Underwater_Route21_Layout",
-      "width": 1,
-      "height": 1,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_Route21/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_Route21/map.bin"
-    },
-    {
       "id": "LAYOUT_UNDERWATER_ROUTE26",
       "name": "Underwater_Route26_Layout",
       "width": 30,
@@ -5190,6 +5180,106 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/NewBarkTown_Houses/border.bin",
       "blockdata_filepath": "data/layouts/NewBarkTown_Houses/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_CITY_HOUSES",
+      "name": "ViridianCity_Houses_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/ViridianCity_Houses/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianCity_Houses/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_CITY_GYM",
+      "name": "ViridianCity_Gym_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PetalburgGym",
+      "border_filepath": "data/layouts/ViridianCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianCity_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_PEWTER_CITY_HOUSES",
+      "name": "PewterCity_Houses_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PewterCity_Houses/border.bin",
+      "blockdata_filepath": "data/layouts/PewterCity_Houses/map.bin"
+    },
+    {
+      "id": "LAYOUT_PEWTER_CITY_GYM",
+      "name": "PewterCity_Gym_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_RustboroGym",
+      "border_filepath": "data/layouts/PewterCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/PewterCity_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_PEWTER_CITY_MUSEUM",
+      "name": "PewterCity_Museum_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PewterCity_Museum/border.bin",
+      "blockdata_filepath": "data/layouts/PewterCity_Museum/map.bin"
+    },
+    {
+      "id": "LAYOUT_CERULEAN_CITY_HOUSES",
+      "name": "CeruleanCity_Houses_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/CeruleanCity_Houses/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanCity_Houses/map.bin"
+    },
+    {
+      "id": "LAYOUT_CERULEAN_CITY_GYM",
+      "name": "CeruleanCity_Gym_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SootopolisGym",
+      "border_filepath": "data/layouts/CeruleanCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanCity_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_VERMILION_CITY_HOUSES",
+      "name": "VermilionCity_Houses_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/VermilionCity_Houses/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCity_Houses/map.bin"
+    },
+    {
+      "id": "LAYOUT_VERMILION_CITY_GYM",
+      "name": "VermilionCity_Gym_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MauvilleGym",
+      "border_filepath": "data/layouts/VermilionCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCity_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_CINNABAR_ISLAND_LAB",
+      "name": "CinnabarIsland_Lab_Layout",
+      "width": 26,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/CinnabarIsland_Lab/border.bin",
+      "blockdata_filepath": "data/layouts/CinnabarIsland_Lab/map.bin"
     }
   ]
 }

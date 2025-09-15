@@ -1202,8 +1202,6 @@ Common_Text_CoordEvent::
 
 	.include "data/maps/RuinsOfAlphMainChamber/scripts.inc"
 
-	.include "data/maps/Underwater_Route21/scripts.inc"
-
 	.include "data/maps/Underwater_Route26/scripts.inc"
 
 	.include "data/maps/OpenOcean/scripts.inc"
@@ -1315,3 +1313,23 @@ Common_Text_CoordEvent::
 	.include "data/maps/PalletTown_OaksLab/scripts.inc"
 
 	.include "data/maps/NewBarkTown_Houses/scripts.inc"
+
+	.include "data/maps/ViridianCity_Houses/scripts.inc"
+
+	.include "data/maps/ViridianCity_Gym/scripts.inc"
+
+	.include "data/maps/PewterCity_Museum/scripts.inc"
+
+	.include "data/maps/PewterCity_Houses/scripts.inc"
+
+	.include "data/maps/PewterCity_Gym/scripts.inc"
+
+	.include "data/maps/CeruleanCity_Houses/scripts.inc"
+
+	.include "data/maps/CeruleanCity_Gym/scripts.inc"
+
+	.include "data/maps/VermilionCity_Houses/scripts.inc"
+
+	.include "data/maps/VermilionCity_Gym/scripts.inc"
+
+	.include "data/maps/CinnabarIsland_Lab/scripts.inc"

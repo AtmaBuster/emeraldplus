@@ -3071,13 +3071,14 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
-    [ITEM_0FD] =
+    [ITEM_NATIONAL_PASS] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
+        .name = _("NATIONAL PASS"),
+        .itemId = ITEM_NATIONAL_PASS,
         .price = 0,
         .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
+	.importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },

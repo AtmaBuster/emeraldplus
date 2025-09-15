@@ -425,6 +425,12 @@ static void CreateLilycoveSSTidalMultichoice(void)
             sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_BATTLE_FRONTIER;
             selectionCount++;
         }
+
+        if (CheckBagHasItem(ITEM_NATIONAL_PASS, 1) == TRUE && FlagGet(FLAG_ENABLE_KANTO_SHIP) == TRUE)
+	{
+	    sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_VERMILION;
+	    selectionCount++;
+	}
     }
 
     if (CheckBagHasItem(ITEM_EON_TICKET, 1) == TRUE && FlagGet(FLAG_ENABLE_SHIP_SOUTHERN_ISLAND) == TRUE)
@@ -500,7 +506,7 @@ static void CreateLilycoveSSTidalMultichoice(void)
     }
 
     count = selectionCount;
-    if (count == SSTIDAL_SELECTION_COUNT)
+    if (count == SSTIDAL_SELECTION_COUNT - 1)
     {
         gSpecialVar_0x8004 = SCROLL_MULTI_SS_TIDAL_DESTINATION;
         ShowScrollableMultichoice();

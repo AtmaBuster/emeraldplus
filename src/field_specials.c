@@ -2550,8 +2550,8 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
     {
         gText_SlateportCity,
         gText_BattleFrontier,
+	gText_VermilionCity,
         gText_SouthernIsland,
-        gText_NavelRock,
         gText_BirthIsland,
         gText_FarawayIsland,
         gText_Exit
