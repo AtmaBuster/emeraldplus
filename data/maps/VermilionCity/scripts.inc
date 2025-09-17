@@ -21,46 +21,102 @@ VermilionCity_TryRemoveSnorlax:
 VermilionCity_EventScript_FerryTrigger::
 	setvar VAR_0x8003, 0
 	goto VermilionCity_EventScript_Ferry
+	end
 
 VermilionCity_EventScript_Sailor::
 	setvar VAR_0x8003, 1
 VermilionCity_EventScript_Ferry::
 	lockall
 	applymovement LOCALID_VERMILION_CITY_SAILOR, Common_Movement_FacePlayer
-	msgbox VermilionCity_Text_SailBack, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, VermilionCity_EventScript_AsYouLike
-	msgbox VermilionCity_Text_SailHome, MSGBOX_DEFAULT
-	closemessage
-	delay 10
-	call_if_eq VAR_0x8003, 0, VermilionCity_EventScript_MoveToFerryTrigger
-	call_if_eq VAR_0x8003, 1, VermilionCity_EventScript_MoveToFerryTalk
-	delay 30
-	hideobjectat LOCALID_PLAYER, 0
-	setvar VAR_0x8004, LOCALID_VERMILION_CITY_SS_TIDAL
-	call Common_EventScript_FerryDepart
+	msgbox VermilionCity_Text_MayISeeYourTicket, MSGBOX_DEFAULT
+	checkitem ITEM_SS_TICKET
+	goto_if_eq VAR_RESULT, FALSE, VermilionCity_EventScript_NoTicket
+	message VermilionCity_Text_WhereWouldYouLikeToGo
+	waitmessage
+	goto VermilionCity_EventScript_ChooseDestination
+	end
+
+VermilionCity_EventScript_ChooseDestination:
+	checkitem ITEM_BUENAS_PIN
+	goto_if_eq VAR_RESULT, TRUE, VermilionCity_EventScript_ChooseDestinationFull
+	multichoicedefault 18, 8, MULTI_VERMILION_FERRY, 1, FALSE
+	switch VAR_RESULT
+	case 0, VermilionCity_EventScript_FerryToLilycove
+	case 1, VermilionCity_EventScript_CancelFerry
+	case MULTI_B_PRESSED, VermilionCity_EventScript_CancelFerry
+	end
+
+VermilionCity_EventScript_ChooseDestinationFull:
+	multichoicedefault 18, 6, MULTI_VERMILION_FERRY_2, 2, FALSE
+	switch VAR_RESULT
+	case 0, VermilionCity_EventScript_FerryToLilycove
+	case 1, VermilionCity_EventScript_FerryToGoldenrod
+	case 2, VermilionCity_EventScript_CancelFerry
+	case MULTI_B_PRESSED, VermilionCity_EventScript_CancelFerry
+	end
+
+VermilionCity_EventScript_FerryToLilycove:
+	msgbox VermilionCity_Text_LilycoveItIs, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, VermilionCity_EventScript_ChooseNewDestination
+	msgbox VermilionCity_Text_PleaseBoardFerry, MSGBOX_DEFAULT
+	call VermilionCity_EventScript_BoardFerry
 	warp MAP_LILYCOVE_CITY_HARBOR, 8, 11
 	waitstate
 	releaseall
 	end
 
-VermilionCity_EventScript_AsYouLike::
-	msgbox VermilionCity_Text_AsYouLike, MSGBOX_DEFAULT
-	closemessage
-	goto_if_eq VAR_0x8003, 1, Common_EventScript_NopReturn
-	applymovement LOCALID_PLAYER, VermilionCity_Movement_LeaveFerry
-	waitmovement 0
-	release
+VermilionCity_EventScript_FerryToGoldenrod:
+	msgbox VermilionCity_Text_GoldenrodItIs, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, VermilionCity_EventScript_ChooseNewDestination
+	msgbox VermilionCity_Text_PleaseBoardFerry, MSGBOX_DEFAULT
+	call VermilionCity_EventScript_BoardFerry
+	warp MAP_GOLDENROD_CITY, 2, 19
+	waitstate
+	releaseall
 	end
 
-VermilionCity_EventScript_MoveToFerryTrigger:
+VermilionCity_EventScript_CancelFerry:
+	msgbox VermilionCity_Text_SailAnotherTime, MSGBOX_DEFAULT
+	closemessage
+	goto VermilionCity_EventScript_LeaveFerry
+	end
+
+VermilionCity_EventScript_ChooseNewDestination:
+	message VermilionCity_Text_ThenWhere
+	waitmessage
+	goto VermilionCity_EventScript_ChooseDestination
+	end
+
+VermilionCity_EventScript_BoardFerry:
+	closemessage
+	delay 10
+	call_if_eq VAR_0x8003, 0, VermilionCity_EventScript_BoardFerryTrigger
+	call_if_eq VAR_0x8003, 1, VermilionCity_EventScript_BoardFerryTalk
+	delay 30
+	hideobjectat LOCALID_PLAYER, 0
+	setvar VAR_0x8004, LOCALID_VERMILION_CITY_SS_TIDAL
+	call Common_EventScript_FerryDepart
+	return
+
+VermilionCity_EventScript_BoardFerryTrigger:
 	applymovement LOCALID_PLAYER, VermilionCity_Movement_MoveToFerryTrigger
 	waitmovement 0
 	return
 
-VermilionCity_EventScript_MoveToFerryTalk:
+VermilionCity_EventScript_BoardFerryTalk:
 	applymovement LOCALID_PLAYER, VermilionCity_Movement_MoveToFerryTalk
 	waitmovement 0
 	return
+
+VermilionCity_EventScript_NoTicket:
+	msgbox VermilionCity_Text_NoTicket, MSGBOX_DEFAULT
+	closemessage
+VermilionCity_EventScript_LeaveFerry:
+	goto_if_eq VAR_0x8003, 1, Common_EventScript_NopReturn
+	applymovement LOCALID_PLAYER, VermilionCity_Movement_LeaveFerry
+	waitmovement 0
+	releaseall
+	end
 
 VermilionCity_Movement_MoveToFerryTalk:
 	walk_left
@@ -72,18 +128,6 @@ VermilionCity_Movement_MoveToFerryTrigger:
 VermilionCity_Movement_LeaveFerry:
 	walk_down
 	step_end
-
-VermilionCity_Text_SailBack:
-	.string "Sail Back?$"
-VermilionCity_Text_AsYouLike:
-	.string "Ok$"
-VermilionCity_Text_SailHome:
-	.string "Sail Home$"
-
-VermilionCity_EventScript_DEBUG_Flute::
-	giveitem ITEM_POKE_FLUTE
-	release
-	end
 
 VermilionCity_EventScript_Snorlax::
 	lockall
@@ -145,3 +189,34 @@ VermilionCity_Text_SnorlaxLeft:
 	.string "SNORLAX calmed down.\n"
 	.string "It gave a huge yawn…\l"
 	.string "And returned to the mountains.$"
+
+VermilionCity_Text_MayISeeYourTicket:
+	.string "Hello, are you here for the ferry?\n"
+	.string "May I see your ticket?$"
+
+VermilionCity_Text_NoTicket:
+	.string "{PLAYER} doesn't have the TICKET…\p"
+	.string "I'm terribly sorry.\p"
+	.string "You must have a TICKET to board\n"
+	.string "the ferry.$"
+
+VermilionCity_Text_WhereWouldYouLikeToGo:
+	.string "{PLAYER} flashed the TICKET.\p"
+	.string "Perfect! That's all you need!\p"
+	.string "And where would you like to go?$"
+
+VermilionCity_Text_LilycoveItIs:
+	.string "LILYCOVE CITY it is, then!$"
+
+VermilionCity_Text_GoldenrodItIs:
+	.string "GOLDENROD CITY it is, then!$"
+
+VermilionCity_Text_ThenWhere:
+	.string "Then, where would you like to go?$"
+
+VermilionCity_Text_PleaseBoardFerry:
+	.string "Please board the ferry and wait for\n"
+	.string "departure.$"
+
+VermilionCity_Text_SailAnotherTime:
+	.string "Please sail with us another time!$"

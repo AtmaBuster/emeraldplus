@@ -302,6 +302,26 @@ static const struct MenuAction MultichoiceList_SSTidalBattleFrontier[] =
     {gText_Exit},
 };
 
+static const struct MenuAction MultichoiceList_VermilionFerry[] =
+{
+    {gText_LilycoveCity},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_VermilionFerry2[] =
+{
+    {gText_LilycoveCity},
+    {gText_GoldenrodCity},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_GoldenrodFerry[] =
+{
+    {gText_LilycoveCity},
+    {gText_VermilionCity},
+    {gText_Exit},
+};
+
 static const struct MenuAction MultichoiceList_RightLeft[] =
 {
     {gText_Right},
@@ -898,6 +918,9 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_SLATEPORT_TENT_RULES]       = MULTICHOICE(MultichoiceList_SlateportTentRules),
     [MULTI_FALLARBOR_TENT_RULES]       = MULTICHOICE(MultichoiceList_FallarborTentRules),
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
+    [MULTI_VERMILION_FERRY]            = MULTICHOICE(MultichoiceList_VermilionFerry),
+    [MULTI_VERMILION_FERRY_2]          = MULTICHOICE(MultichoiceList_VermilionFerry2),
+    [MULTI_GOLDENROD_FERRY]            = MULTICHOICE(MultichoiceList_GoldenrodFerry),
 };
 
 const u8 *const gStdStrings[] =

@@ -744,6 +744,7 @@ const u8 gText_BirthIsland[] = _("BIRTH ISLAND");
 const u8 gText_FarawayIsland[] = _("FARAWAY ISLAND");
 const u8 gText_NavelRock[] = _("NAVEL ROCK");
 const u8 gText_VermilionCity[] = _("VERMILION CITY");
+const u8 gText_GoldenrodCity[] = _("GOLDENROD CITY");
 const u8 gText_ClawFossil[] = _("CLAW FOSSIL");
 const u8 gText_RootFossil[] = _("ROOT FOSSIL");
 const u8 gText_No4[] = _("NO");
