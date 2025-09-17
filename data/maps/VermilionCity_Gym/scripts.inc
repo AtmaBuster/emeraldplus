@@ -1,2 +1,226 @@
 VermilionCity_Gym_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, VermilionCity_Gym_OnLoad
 	.byte 0
+
+VermilionCity_Gym_OnLoad:
+	goto_if_set FLAG_VERMILION_GYM_PUZZLE_DONE, VermilionCity_Gym_EventScript_OpenBothGates
+	call VermilionCity_Gym_EventScript_RandomizeCans
+	end
+
+VermilionCity_Gym_EventScript_RandomizeCans:
+	clearflag FLAG_TEMP_A
+	clearflag FLAG_TEMP_B
+	random 6
+	addvar VAR_RESULT, 1
+	copyvar VAR_TEMP_A, VAR_RESULT
+	random 6
+	addvar VAR_RESULT, 1
+	copyvar VAR_TEMP_B, VAR_RESULT
+	compare_var_to_var VAR_TEMP_A, VAR_TEMP_B
+	goto_if_eq VermilionCity_Gym_EventScript_RandomizeCans
+	return
+
+VermilionCity_Gym_EventScript_OpenBothGates:
+	call VermilionCity_Gym_EventScript_OpenSecondGate
+	call VermilionCity_Gym_EventScript_OpenFirstGate
+	end
+
+VermilionCity_Gym_EventScript_OpenSecondGate:
+	setmetatile 7, 5, METATILE_MauvilleGym_GreenBeamH1_Off, FALSE
+	setmetatile 8, 5, METATILE_MauvilleGym_GreenBeamH2_Off, FALSE
+	setmetatile 7, 6, METATILE_MauvilleGym_GreenBeamH3_Off, FALSE
+	setmetatile 8, 6, METATILE_MauvilleGym_GreenBeamH4_Off, FALSE
+	return
+
+VermilionCity_Gym_EventScript_OpenFirstGate:
+	setmetatile 7, 7, METATILE_MauvilleGym_GreenBeamH1_Off, FALSE
+	setmetatile 8, 7, METATILE_MauvilleGym_GreenBeamH2_Off, FALSE
+	setmetatile 7, 8, METATILE_MauvilleGym_GreenBeamH3_Off, FALSE
+	setmetatile 8, 8, METATILE_MauvilleGym_GreenBeamH4_Off, FALSE
+	return
+
+VermilionCity_Gym_EventScript_CloseSecondGate:
+	setmetatile 7, 5, METATILE_MauvilleGym_GreenBeamH1_On, TRUE
+	setmetatile 8, 5, METATILE_MauvilleGym_GreenBeamH2_On, TRUE
+	setmetatile 7, 6, METATILE_MauvilleGym_GreenBeamH3_On, TRUE
+	setmetatile 8, 6, METATILE_MauvilleGym_GreenBeamH4_On, TRUE
+	return
+
+VermilionCity_Gym_EventScript_CloseFirstGate:
+	setmetatile 7, 7, METATILE_MauvilleGym_GreenBeamH1_On, TRUE
+	setmetatile 8, 7, METATILE_MauvilleGym_GreenBeamH2_On, TRUE
+	setmetatile 7, 8, METATILE_MauvilleGym_GreenBeamH3_On, TRUE
+	setmetatile 8, 8, METATILE_MauvilleGym_GreenBeamH4_On, TRUE
+	return
+
+VermilionCity_Gym_EventScript_PuzzleDone::
+	msgbox VermilionCity_Gym_Text_PuzzleDone, MSGBOX_DEFAULT
+	releaseall
+	end
+
+VermilionCity_Gym_EventScript_WrongCan:
+	msgbox VermilionCity_Gym_Text_WrongCan, MSGBOX_DEFAULT
+	call VermilionCity_Gym_EventScript_CloseSecondGate
+	call VermilionCity_Gym_EventScript_CloseFirstGate
+	special DrawWholeMapView
+	call VermilionCity_Gym_EventScript_RandomizeCans
+	releaseall
+	end
+
+VermilionCity_Gym_EventScript_OpenGateLeft:
+	msgbox VermilionCity_Gym_Text_RightCan, MSGBOX_DEFAULT
+	call VermilionCity_Gym_EventScript_OpenFirstGate
+	goto_if_set FLAG_TEMP_B, VermilionCity_Gym_EventScript_FinishOpenBothGates
+	special DrawWholeMapView
+	setflag FLAG_TEMP_A
+	releaseall
+	end
+
+VermilionCity_Gym_EventScript_OpenGateRight:
+	msgbox VermilionCity_Gym_Text_RightCan, MSGBOX_DEFAULT
+	call VermilionCity_Gym_EventScript_OpenFirstGate
+	goto_if_set FLAG_TEMP_A, VermilionCity_Gym_EventScript_FinishOpenBothGates
+	special DrawWholeMapView
+	setflag FLAG_TEMP_B
+	releaseall
+	end
+
+VermilionCity_Gym_EventScript_FinishOpenBothGates:
+	msgbox VermilionCity_Gym_Text_BothCans, MSGBOX_DEFAULT
+	call VermilionCity_Gym_EventScript_OpenSecondGate
+	special DrawWholeMapView
+	setflag FLAG_VERMILION_GYM_PUZZLE_DONE
+	releaseall
+	end
+
+VermilionCity_Gym_Text_RightCan:
+	.string "Right can! Poggers!$"
+
+VermilionCity_Gym_Text_BothCans:
+	.string "Both cans! Super poggers!$"
+
+VermilionCity_Gym_Text_PuzzleDone:
+	.string "Garbamge camb$"
+
+VermilionCity_Gym_Text_WrongCan:
+	.string "Wrong can, oopsie woopsie$"
+
+
+VermilionCity_Gym_EventScript_TrashCan_Left1::
+	lockall
+	goto_if_set FLAG_VERMILION_GYM_PUZZLE_DONE, VermilionCity_Gym_EventScript_PuzzleDone
+	goto_if_set FLAG_TEMP_A, VermilionCity_Gym_EventScript_WrongCan
+	goto_if_eq VAR_TEMP_A, 1, VermilionCity_Gym_EventScript_OpenGateLeft
+	goto_if_set FLAG_TEMP_B, VermilionCity_Gym_EventScript_WrongCan
+	goto VermilionCity_Gym_EventScript_PuzzleDone
+	end
+
+
+VermilionCity_Gym_EventScript_TrashCan_Left2::
+	lockall
+	goto_if_set FLAG_VERMILION_GYM_PUZZLE_DONE, VermilionCity_Gym_EventScript_PuzzleDone
+	goto_if_set FLAG_TEMP_A, VermilionCity_Gym_EventScript_WrongCan
+	goto_if_eq VAR_TEMP_A, 2, VermilionCity_Gym_EventScript_OpenGateLeft
+	goto_if_set FLAG_TEMP_B, VermilionCity_Gym_EventScript_WrongCan
+	goto VermilionCity_Gym_EventScript_PuzzleDone
+	end
+
+
+VermilionCity_Gym_EventScript_TrashCan_Left3::
+	lockall
+	goto_if_set FLAG_VERMILION_GYM_PUZZLE_DONE, VermilionCity_Gym_EventScript_PuzzleDone
+	goto_if_set FLAG_TEMP_A, VermilionCity_Gym_EventScript_WrongCan
+	goto_if_eq VAR_TEMP_A, 3, VermilionCity_Gym_EventScript_OpenGateLeft
+	goto_if_set FLAG_TEMP_B, VermilionCity_Gym_EventScript_WrongCan
+	goto VermilionCity_Gym_EventScript_PuzzleDone
+	end
+
+
+VermilionCity_Gym_EventScript_TrashCan_Left4::
+	lockall
+	goto_if_set FLAG_VERMILION_GYM_PUZZLE_DONE, VermilionCity_Gym_EventScript_PuzzleDone
+	goto_if_set FLAG_TEMP_A, VermilionCity_Gym_EventScript_WrongCan
+	goto_if_eq VAR_TEMP_A, 4, VermilionCity_Gym_EventScript_OpenGateLeft
+	goto_if_set FLAG_TEMP_B, VermilionCity_Gym_EventScript_WrongCan
+	goto VermilionCity_Gym_EventScript_PuzzleDone
+	end
+
+
+VermilionCity_Gym_EventScript_TrashCan_Left5::
+	lockall
+	goto_if_set FLAG_VERMILION_GYM_PUZZLE_DONE, VermilionCity_Gym_EventScript_PuzzleDone
+	goto_if_set FLAG_TEMP_A, VermilionCity_Gym_EventScript_WrongCan
+	goto_if_eq VAR_TEMP_A, 5, VermilionCity_Gym_EventScript_OpenGateLeft
+	goto_if_set FLAG_TEMP_B, VermilionCity_Gym_EventScript_WrongCan
+	goto VermilionCity_Gym_EventScript_PuzzleDone
+	end
+
+
+VermilionCity_Gym_EventScript_TrashCan_Left6::
+	lockall
+	goto_if_set FLAG_VERMILION_GYM_PUZZLE_DONE, VermilionCity_Gym_EventScript_PuzzleDone
+	goto_if_set FLAG_TEMP_A, VermilionCity_Gym_EventScript_WrongCan
+	goto_if_eq VAR_TEMP_A, 6, VermilionCity_Gym_EventScript_OpenGateLeft
+	goto_if_set FLAG_TEMP_B, VermilionCity_Gym_EventScript_WrongCan
+	goto VermilionCity_Gym_EventScript_PuzzleDone
+	end
+
+
+VermilionCity_Gym_EventScript_TrashCan_Right1::
+	lockall
+	goto_if_set FLAG_VERMILION_GYM_PUZZLE_DONE, VermilionCity_Gym_EventScript_PuzzleDone
+	goto_if_set FLAG_TEMP_B, VermilionCity_Gym_EventScript_WrongCan
+	goto_if_eq VAR_TEMP_B, 1, VermilionCity_Gym_EventScript_OpenGateRight
+	goto_if_set FLAG_TEMP_A, VermilionCity_Gym_EventScript_WrongCan
+	goto VermilionCity_Gym_EventScript_PuzzleDone
+	end
+
+
+VermilionCity_Gym_EventScript_TrashCan_Right2::
+	lockall
+	goto_if_set FLAG_VERMILION_GYM_PUZZLE_DONE, VermilionCity_Gym_EventScript_PuzzleDone
+	goto_if_set FLAG_TEMP_B, VermilionCity_Gym_EventScript_WrongCan
+	goto_if_eq VAR_TEMP_B, 2, VermilionCity_Gym_EventScript_OpenGateRight
+	goto_if_set FLAG_TEMP_A, VermilionCity_Gym_EventScript_WrongCan
+	goto VermilionCity_Gym_EventScript_PuzzleDone
+	end
+
+
+VermilionCity_Gym_EventScript_TrashCan_Right3::
+	lockall
+	goto_if_set FLAG_VERMILION_GYM_PUZZLE_DONE, VermilionCity_Gym_EventScript_PuzzleDone
+	goto_if_set FLAG_TEMP_B, VermilionCity_Gym_EventScript_WrongCan
+	goto_if_eq VAR_TEMP_B, 3, VermilionCity_Gym_EventScript_OpenGateRight
+	goto_if_set FLAG_TEMP_A, VermilionCity_Gym_EventScript_WrongCan
+	goto VermilionCity_Gym_EventScript_PuzzleDone
+	end
+
+
+VermilionCity_Gym_EventScript_TrashCan_Right4::
+	lockall
+	goto_if_set FLAG_VERMILION_GYM_PUZZLE_DONE, VermilionCity_Gym_EventScript_PuzzleDone
+	goto_if_set FLAG_TEMP_B, VermilionCity_Gym_EventScript_WrongCan
+	goto_if_eq VAR_TEMP_B, 4, VermilionCity_Gym_EventScript_OpenGateRight
+	goto_if_set FLAG_TEMP_A, VermilionCity_Gym_EventScript_WrongCan
+	goto VermilionCity_Gym_EventScript_PuzzleDone
+	end
+
+
+VermilionCity_Gym_EventScript_TrashCan_Right5::
+	lockall
+	goto_if_set FLAG_VERMILION_GYM_PUZZLE_DONE, VermilionCity_Gym_EventScript_PuzzleDone
+	goto_if_set FLAG_TEMP_B, VermilionCity_Gym_EventScript_WrongCan
+	goto_if_eq VAR_TEMP_B, 5, VermilionCity_Gym_EventScript_OpenGateRight
+	goto_if_set FLAG_TEMP_A, VermilionCity_Gym_EventScript_WrongCan
+	goto VermilionCity_Gym_EventScript_PuzzleDone
+	end
+
+
+VermilionCity_Gym_EventScript_TrashCan_Right6::
+	lockall
+	goto_if_set FLAG_VERMILION_GYM_PUZZLE_DONE, VermilionCity_Gym_EventScript_PuzzleDone
+	goto_if_set FLAG_TEMP_B, VermilionCity_Gym_EventScript_WrongCan
+	goto_if_eq VAR_TEMP_B, 6, VermilionCity_Gym_EventScript_OpenGateRight
+	goto_if_set FLAG_TEMP_A, VermilionCity_Gym_EventScript_WrongCan
+	goto VermilionCity_Gym_EventScript_PuzzleDone
+	end

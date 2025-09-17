@@ -2,7 +2,7 @@
   "id": "MAP_VERMILION_CITY_GYM",
   "name": "VermilionCity_Gym",
   "layout": "LAYOUT_VERMILION_CITY_GYM",
-  "music": "MUS_RG_GYM",
+  "music": "MUS_GYM",
   "region_map_section": "MAPSEC_VERMILION_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -14,7 +14,119 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 7,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_VERMILION_CITY",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 8,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_VERMILION_CITY",
+      "dest_warp_id": "2"
+    }
+  ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "VermilionCity_Gym_EventScript_TrashCan_Left1"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "VermilionCity_Gym_EventScript_TrashCan_Left2"
+    },
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "VermilionCity_Gym_EventScript_TrashCan_Left3"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "VermilionCity_Gym_EventScript_TrashCan_Left4"
+    },
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "VermilionCity_Gym_EventScript_TrashCan_Left5"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "VermilionCity_Gym_EventScript_TrashCan_Left6"
+    },
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "VermilionCity_Gym_EventScript_TrashCan_Right1"
+    },
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "VermilionCity_Gym_EventScript_TrashCan_Right2"
+    },
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "VermilionCity_Gym_EventScript_TrashCan_Right3"
+    },
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "VermilionCity_Gym_EventScript_TrashCan_Right4"
+    },
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "VermilionCity_Gym_EventScript_TrashCan_Right5"
+    },
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "VermilionCity_Gym_EventScript_TrashCan_Right6"
+    }
+  ]
 }

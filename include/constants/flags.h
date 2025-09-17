@@ -516,7 +516,7 @@
 #define FLAG_DEFEATED_HO_OH                  0x1DC
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
-#define FLAG_UNUSED_0x1DE                    0x1DE // Unused Flag
+#define FLAG_DEFEATED_SNORLAX                0x1DE
 #define FLAG_UNUSED_0x1DF                    0x1DF // Unused Flag
 #define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
 #define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
@@ -775,9 +775,7 @@
 #define FLAG_HIDE_PETALBURG_CITY_WALLY                              0x2D6
 #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0x2D8
-
-#define FLAG_UNUSED_0x2D9                                           0x2D9 // Unused Flag
-
+#define FLAG_HIDE_SNORLAX                                           0x2D9
 #define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0x2DA
 #define FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0x2DB
 #define FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1                    0x2DC
@@ -1326,7 +1324,7 @@
 #define FLAG_DEFEATED_SOOTOPOLIS_GYM                                0x4F7
 #define FLAG_DEFEATED_METEOR_FALLS_STEVEN                           0x4F8
 
-#define FLAG_UNUSED_0x4F9                                           0x4F9 // Unused Flag
+#define FLAG_VERMILION_GYM_PUZZLE_DONE                              0x4F9
 #define FLAG_UNUSED_0x4FA                                           0x4FA // Unused Flag
 
 #define FLAG_DEFEATED_ELITE_4_SIDNEY                                0x4FB

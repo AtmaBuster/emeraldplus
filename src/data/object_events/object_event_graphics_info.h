@@ -4671,3 +4671,22 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Celebi = {
     .images = sPicTable_Celebi,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Snorlax = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 1152,
+    .width = 48,
+    .height = 48,
+    .paletteSlot = PALSLOT_NPC_3,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = TRUE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_32x32,
+    .subspriteTables = sOamTables_48x48,
+    .anims = sAnimTable_Inanimate,
+    .images = sPicTable_Snorlax,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
