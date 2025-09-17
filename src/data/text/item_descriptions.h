@@ -1012,11 +1012,6 @@ static const u8 sContestPassDesc[] = _(
     "for entering\n"
     "POKéMON CONTESTS.");
 
-static const u8 sTanzakuDesc[] = _(
-    "A colored strip of\n"
-    "paper, said to\n"
-    "grant wishes.");
-
 static const u8 sWailmerPailDesc[] = _(
     "A tool used for\n"
     "watering BERRIES\n"
@@ -1413,11 +1408,6 @@ static const u8 sHM08Desc[] = _(
     "the 1st turn, then\n"
     "attacks next turn.");
 
-static const u8 sGSBallDesc[] = _(
-    "A mysterious BALL.\n"
-    "Very little is known\n"
-    "about it.");
-
 // FireRed/LeafGreen key items
 static const u8 sOaksParcelDesc[] = _(
     "A parcel for PROF.\n"
@@ -1559,3 +1549,89 @@ static const u8 sOldSeaMapDesc[] = _(
     "A faded sea chart\n"
     "that shows the way\n"
     "to a certain island.");
+
+// New items
+static const u8 sTanzakuDesc[] = _(
+    "A colored strip of\n"
+    "paper, said to\n"
+    "grant wishes.");
+
+static const u8 sGSBallDesc[] = _(
+    "A mysterious BALL.\n"
+    "Very little is known\n"
+    "about it.");
+
+static const u8 sPurpleApricornDesc[] = _(
+    "A purple-colored\n"
+    "Apricorn. It has a\n"
+    "strange scent.");
+
+static const u8 sCyanApricornDesc[] = _(
+    "A cyan-colored\n"
+    "Apricorn. It has a\n"
+    "strange scent.");
+
+static const u8 sLimeApricornDesc[] = _(
+    "A lime-colored\n"
+    "Apricorn. It has a\n"
+    "strange scent.");
+
+static const u8 sOrangeApricornDesc[] = _(
+    "An orange-colored\n"
+    "Apricorn. It has a\n"
+    "strange scent.");
+
+static const u8 sGrayApricornDesc[] = _(
+    "A gray-colored\n"
+    "Apricorn. It has a\n"
+    "strange scent.");
+
+static const u8 sGoldApricornDesc[] = _(
+    "A gold-colored\n"
+    "Apricorn. It has a\n"
+    "strange scent.");
+
+static const u8 sIceCrystalDesc[] = _(
+    "A crystal full of\n"
+    "icy energy. It's\n"
+    "cold to the touch.");
+
+static const u8 sElecCrystalDesc[] = _(
+    "A crystal full of\n"
+    "electric energy. It\n"
+    "sparks at a touch.");
+
+static const u8 sFireCrystalDesc[] = _(
+    "A crystal full of\n"
+    "firey energy. It's\n"
+    "hot to the touch.");
+
+static const u8 sMagnetPassDesc[] = _(
+    "A multi-use pass\n"
+    "for riding the\n"
+    "MAGNET TRAIN.");
+
+static const u8 sSilverPassDesc[] = _(
+    "A pass granting\n"
+    "permission to\n"
+    "visit MT. SILVER.");
+
+static const u8 sBuenasPinDesc[] = _(
+    "A promotional pin\n"
+    "from BUENA's radio\n"
+    "show.");
+
+static const u8 sRainbowWingDesc[] = _(
+    "A mystical feather\n"
+    "sparkling with\n"
+    "rainbow colors.");
+
+static const u8 sSilverWingDesc[] = _(
+    "A mystical feather\n"
+    "gleaming with a\n"
+    "silvery color.");
+
+static const u8 sNationalPassDesc[] = _(
+    "A ticket granting\n"
+    "passage from HOENN\n"
+    "to KANTO.");
